@@ -1,0 +1,21 @@
+@use  'global';
+
+.learn-section{
+    height: 100vh;
+    width: 100vw;
+    margin-left: 5rem;
+    h4{
+        color: var(--clr-grey-4);
+        margin-bottom: 0;
+        font-size: 2rem;
+    }
+    .underline{
+        width: 60rem;
+        height: 0.25rem;
+        background-color: var(--clr-grey-2);
+    }
+    .con-section{
+        padding: 2rem;
+    }
+
+}
