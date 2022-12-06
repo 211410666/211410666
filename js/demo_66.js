@@ -52,28 +52,48 @@ function linkto(index){
     console.log('p',p)
 
     switch(index){
-        case 'a':
+        case 1:
             p.innerHTML = `<iframe src="./class_demo/demo/w01_66/" 
             width="100%" height="100%" />`
             break;
         case 2:
-            p.innerHTML = `<iframe src="./demo/w02_66/card_66.html" 
+            p.innerHTML = `<iframe src="./class_demo/demo/w02_66/card_66.html" 
             width="100%" height="100%" />`
             break;
         case 3:
-            p.innerHTML = `<iframe src="./demo/w04_66/blog_66.html" 
+            p.innerHTML = `<iframe src="./class_demo/demo/w03_66/blog_66.html" 
             width="100%" height="100%" />`
             break;
         case 4:
-            p.innerHTML = `<iframe src="./demo/w06_66/blog_66.html" 
+            p.innerHTML = `<iframe src="./class_demo/demo/w04_66/blog_66.html" 
             width="100%" height="100%" />`
             break;
         case 5:
-            p.innerHTML = `<iframe src="./teach_66/teach_66.html" 
+            p.innerHTML = `<iframe src="./class_demo/demo/w05_66/blog_66.html" 
             width="100%" height="100%" />`
             break;
         case 6:
-            p.innerHTML = `<iframe src="./demo/w09_66/resume_66.html" 
+            p.innerHTML = `<iframe src="./class_demo/demo/w06_66/blog_66.html" 
+            width="100%" height="100%" />`
+            break;
+        case 8:
+            p.innerHTML = `<iframe src="./class_demo/demo/w08_66/quiz1_66.html"
+            width="100%" height="100%" />`
+            break;
+        case 9:
+            p.innerHTML = `<iframe src="./class_demo/demo/w09_66/multipage_66.html" 
+            width="100%" height="100%" />`
+            break;
+        case 11:
+            p.innerHTML = `<iframe src="./class_demo/demo/w11_66/midterm_66/midterm_66.html" 
+            width="100%" height="100%" />`
+            break;
+        case 12:
+            p.innerHTML = `<iframe src="./class_demo/demo/w12_66_portfolio/portfolio/" 
+            width="100%" height="100%" />`
+            break;
+        case 13:
+            p.innerHTML = `<iframe src="./class_demo/demo/w13_66_portfolio/portfolio/" 
             width="100%" height="100%" />`
             break;
     }
