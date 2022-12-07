@@ -18,3 +18,7 @@
 ### make logo to Portfolio & show Portfolio_img by tiles
 
 ![](5.png)
+
+### use button and backgroud-img to adjust opacity(hover) and js onclick to change h3 content
+
+![](6.png)
