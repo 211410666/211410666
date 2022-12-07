@@ -1,0 +1,73 @@
+@use  'global';
+
+.portfolio-tiles{
+    margin: 0 auto;
+    width: 75vw;
+    &-logo{
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    &-photo{
+        margin: 0 auto;
+        display: block;
+        max-width: 600px;
+        height: auto;
+    }   
+    &-img{
+        width: 45vw;
+        margin: 0 auto;
+        margin-top: 1.5rem;
+        display: grid;
+        
+        @media screen and (min-width:768px) {
+            gap: 1rem;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(3,1fr);
+            grid-template-areas: 
+            'a a a b'
+            'c d e e'
+            'f g g h'
+            ;
+            .tiles1{
+                grid-area: a;
+            }
+            .tiles2{
+                grid-area: b;
+            }
+            .tiles3{
+                grid-area: c;
+            }
+            .tiles4{
+                grid-area: d;
+            }
+            .tiles5{
+                grid-area: e;
+            }
+            .tiles6{
+                grid-area: f;
+            }
+            .tiles7{
+                grid-area: g;
+            }
+            .tiles8{
+                grid-area: h;
+            }
+        }
+        button{
+            background-image: url("../img/tile1.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: 1px solid transparent;
+            box-shadow: var(--light-shadow);
+            height: 100px;
+            max-height: 100px;
+            opacity: 0.4;
+            transition: 0.6s ease-out;
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+    
+}

@@ -23,7 +23,7 @@ function change(index){
             }
             break;
         case 2:
-            p.innerHTML = `<iframe src="./demo/w02_66/card_66.html" 
+            p.innerHTML = `<iframe src="./portfolio_66/portfolio_66.html" 
             width="100%" height="100%" />`
             break;
         case 3:
