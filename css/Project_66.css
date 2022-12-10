@@ -1,6 +1,8 @@
 :root {
   /* color blue */
   --clr-blue-navgb:#577db7;
+  --clr-primary-5: hsl(42, 78%, 60%);
+  --clr-primary-6: hsl(43, 89%, 70%);
 }
 
 *,
@@ -24,12 +26,19 @@ body {
   height: 200vh;
 }
 
+.underline {
+  width: 5rem;
+  height: 0.25rem;
+  background-color: var(--clr-primary-5);
+}
+
 /*
 =======================
 nav
 =======================
 */
 .nav {
+  text-align: justify;
   background-color: var(--clr-blue-navgb);
   display: flex;
   gap: 1.5rem;
@@ -55,13 +64,32 @@ nav
   gap: 2rem;
   height: 80px;
   align-items: center;
+  text-align: center;
 }
 .nav-links a {
+  margin: 0 auto;
   color: white;
   font-weight: bold;
   font-size: 20px;
 }
+.nav-links li {
+  width: fit-content;
+}
+.nav-links li:hover .underline {
+  width: 100%;
+  transition-duration: 0.7s;
+  transform-origin: left;
+}
+.nav-links li:hover a {
+  color: var(--clr-primary-6);
+}
+.nav-links li:hover .icon {
+  color: var(--clr-primary-6);
+}
 .nav-links .icon {
   color: white;
   margin-left: 0.5rem;
+}
+.nav .underline {
+  width: 0;
 }/*# sourceMappingURL=Project_66.css.map */

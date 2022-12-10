@@ -7,6 +7,7 @@ nav
 */
 
 .nav{
+    text-align: justify;
     background-color: var(--clr-blue-navgb);
     display: flex;
     gap: 1.5rem;
@@ -31,15 +32,37 @@ nav
         gap: 2rem;
         height: 80px;
         align-items: center;
+        text-align: center;
         a{
+            
+            margin: 0 auto;
             color: white;
             font-weight: bold;
             font-size: 20px;
+        }
+        li{
+            width: fit-content;
+            &:hover .underline{
+                width: 100%;
+                transition-duration: 0.7s;
+                transform-origin: left;
+            }
+            &:hover a{
+                color: var(--clr-primary-6);
+            }
+
+            &:hover .icon{
+                color: var(--clr-primary-6);
+            }
         }
         .icon{
             color: white;
             margin-left: 0.5rem;
         }
+        
+    }
+    .underline{
+        width: 0;
         
     }
 }
