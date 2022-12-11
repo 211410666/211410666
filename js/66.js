@@ -10,7 +10,7 @@ console.log('sidebar', sidebar);
 
 
 window.addEventListener('resize', function () {
-  if (window.outerWidth > 850) {
+  if (window.outerWidth > 870) {
     navBtn.style.display = "none";
     closeBtn.style.display = "none";
     sidebar.classList.remove('show-sidebar');
