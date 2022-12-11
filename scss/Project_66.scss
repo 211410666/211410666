@@ -7,6 +7,7 @@ nav
 */
 
 .nav{
+    z-index: 2;
     text-align: justify;
     background-color: var(--clr-blue-navgb);
     display: flex;
@@ -71,6 +72,7 @@ nav
         display: none;
     }
     @media screen and (max-width:1100px) {
+        height: 60px;
         a{
             font-size: 15px;
         }
@@ -80,6 +82,7 @@ nav
     }
     @media screen and (max-width:996) {
         a{
+            height: 60px;
             font-size: 10px;
         }
         &-links{
@@ -123,7 +126,7 @@ nav
         display: none;
         position: absolute;
         background-color: var(--clr-blue-lightblue-t);
-        z-index: 5;
+        z-index: 1;
         
         a{
             padding: 1.2rem;
@@ -159,4 +162,63 @@ nav
     &:hover{
         margin-top: 0.5rem;
     }
+}
+
+
+/*
+=======================
+sidebar
+=======================
+*/
+
+.sidebar{
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    background-color:rgb(255, 255, 255, 0.7);
+    transition: all 0.4s linear;
+    transform: translateY(-100%);
+
+    
+    &-links{
+        display: grid;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        font-size: 2rem;
+        gap: 2rem;
+        margin-left: 3rem;
+        font-weight: bold;
+        a{
+            color: var(--clr-blue-navgb);
+        }
+        
+    }
+    i{
+        color: var(--clr-blue-navgb);
+        margin-left: 1rem;
+        font-size: 1.2rem;
+    }
+
+    li{
+        display: grid;
+        grid-template-columns: 130px 1fr;
+        justify-content: center;
+        align-items: center;
+        vertical-align: middle;
+    }
+}
+
+.show-sidebar{
+    transform: translateY(0);
+}
+.close-btn{
+    display: none;
+    margin-right: 2rem;
+    border-color: transparent;
+    background-color: transparent;
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
 }
