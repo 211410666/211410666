@@ -1,8 +1,20 @@
 :root {
   /* color blue */
   --clr-blue-navgb:#577db7;
+  --clr-blue-lightblue:#e5eaf1;
+  --clr-blue-lightblue2:#c1cddf;
+  --clr-blue-navgb-t:#577db7;
+  --clr-blue-lightblue-t:rgb(229, 234, 241,0.3);
+  --clr-blue-lightblue2-t:rgb(193, 205, 223,0.3);
   --clr-primary-5: hsl(42, 78%, 60%);
   --clr-primary-6: hsl(43, 89%, 70%);
+  --clr-primary-8: hsl(45, 86%, 81%);
+  --clr-primary-10: hsl(45, 100%, 96%);
+  --clr-grey-2: hsl(211, 39%, 23%);
+  --clr-grey-4: hsl(209, 28%, 39%);
+  --clr-grey-5: hsl(210, 22%, 49%);
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 *,
@@ -92,4 +104,55 @@ nav
 }
 .nav .underline {
   width: 0;
+}
+
+.nav-fix {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  opacity: 0.6;
+  box-shadow: var(--light-shadow);
+  z-index: 5;
+}
+
+.drop-list {
+  display: inline-block;
+  border-radius: 5px;
+}
+.drop-list .nav-form {
+  display: none;
+  position: absolute;
+  background-color: var(--clr-blue-lightblue-t);
+  z-index: 5;
+}
+.drop-list .nav-form a {
+  padding: 1.2rem;
+  width: 100%;
+}
+.drop-list:hover .nav-form {
+  display: flex;
+  flex-direction: column;
+}
+.drop-list:hover .nav-form a {
+  font-size: 1rem;
+  color: var(--clr-grey-5);
+}
+.drop-list:hover .nav-form:hover {
+  display: flex;
+}
+.drop-list:hover .nav-form a:hover {
+  background-color: var(--clr-blue-lightblue2-t);
+  border-color: var(--clr-grey-2);
+  color: rgb(255, 0, 0);
+  transition-timing-function: linear;
+  transition-duration: 0.5s;
+  transform-origin: left;
+}
+.drop-list:hover .underline {
+  margin-bottom: 0.5rem;
+}
+.drop-list:hover {
+  margin-top: 0.5rem;
 }/*# sourceMappingURL=Project_66.css.map */
