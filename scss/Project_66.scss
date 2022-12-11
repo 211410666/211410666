@@ -67,6 +67,40 @@ nav
         width: 0;
         
     }
+    &-btn{
+        display: none;
+    }
+    @media screen and (max-width:1100px) {
+        a{
+            font-size: 15px;
+        }
+        &-links{
+            gap: 1rem;
+        }
+    }
+    @media screen and (max-width:996) {
+        a{
+            font-size: 10px;
+        }
+        &-links{
+            gap: 0.5rem;
+        }
+    }
+    @media screen and (max-width:850px) {
+        &-btn{
+            display: block;
+            margin-right: 2rem;
+            border-color: transparent;
+            background-color: transparent;
+            font-size: 1.8rem;
+            color: white;
+            cursor: pointer;
+        }
+        &-links{
+            display: none;
+        }
+    }
+    
 }
 
 .nav-fix{
@@ -85,7 +119,6 @@ nav
 .drop-list{
     display: inline-block;
     border-radius: 5px;
-    
     .nav-form{
         display: none;
         position: absolute;
