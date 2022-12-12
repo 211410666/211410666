@@ -89,7 +89,7 @@ nav
             gap: 0.5rem;
         }
     }
-    @media screen and (max-width:870px) {
+    @media screen and (max-width:850px) {
         &-btn{
             display: block;
             margin-right: 2rem;
@@ -180,7 +180,9 @@ sidebar
     background-color:rgb(255, 255, 255, 0.7);
     transition: all 0.4s linear;
     transform: translateY(-120%);
-
+    .underline{
+        width: 0;
+    }
     
     &-links{
         display: grid;
@@ -202,11 +204,36 @@ sidebar
     }
 
     li{
-        display: grid;
-        grid-template-columns: 130px 1fr;
-        justify-content: center;
-        align-items: center;
-        vertical-align: middle;
+
+        .sidebar-link{
+            display: flex;
+            align-items: center;
+            vertical-align: middle;
+        }
+        
+        
+        
+        &:hover{
+            
+            a{
+                transition-duration: 0.2s ;
+                transform-origin: left;
+                color: red;
+            }
+            
+            i{
+                transition-duration: 0.2s ;
+                transform-origin: left;
+                color: red;
+            }
+            
+        }
+        width: fit-content;
+        &:hover .underline{
+            width: 100%;
+            transition-duration: 0.7s;
+            transform-origin: left;
+        }
     }
 }
 
@@ -250,5 +277,40 @@ contact
     }
     a{
         color: var(--clr-blue-dark);
+    }
+}
+
+
+/*
+=======================
+index
+=======================
+*/
+
+.index{
+    
+    overflow: hidden;
+    
+    &::before{
+        content: "";
+        position: absolute;
+        top: 80px;
+        width: 100%;
+        height: calc(100vh);
+        background-image: url("../img/bg.png");
+        opacity: 0.25;
+        
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .index{
+        content: "";
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        height: calc(100vh - 60px);
+        background-image: url("../img/bg.png");
+        opacity: 0.25;
     }
 }

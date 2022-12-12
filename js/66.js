@@ -10,12 +10,12 @@ console.log('sidebar', sidebar);
 
 
 window.addEventListener('resize', function () {
-  if (window.outerWidth > 870) {
+  if (window.outerWidth > 850) {
     navBtn.style.display = "none";
     closeBtn.style.display = "none";
     sidebar.classList.remove('show-sidebar');
   }
-  else {
+  else if(closeBtn.style.display=="none") {
     navBtn.style.display = "block";
   }
 });
