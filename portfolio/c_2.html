@@ -16,46 +16,49 @@
 </head>
 <body>
     <section class="port">
-
         <header class="c_header">
-            <h4>基本框架與輸出</h4>
-            <p>基礎的C語言框架,與基本輸出函式介紹與應用</p>
+            <h4>Input & Operation</h4>
+            <p>C語言的基礎輸入與運算</p>
         </header>
         
         <div class="port-container">
-            <img src="./img_c/1.png" alt="">
+            <img src="./img_c/2.png" alt="">
             <div class="commentarys">
                 <div class="commentary">
-                    <h3>#include&lt;標頭檔名稱&gt;</h3>
+                    <h3>float var_name;</h3>
                     <div class="underline"></div>
-                    <p>引用函式庫,圖示中為最常用的其中兩種函式庫</p>
+                    <p>變數宣告,float為其中一個型態,其他還包括int char double等</p>
                 </div>
                 <div class="commentary">
-                    <h3>int main(){}</h3>
+                    <h3>scanf("%f",&var_name)</h3>
                     <div class="underline"></div>
-                    <p>主函式框架,當程式執行時,會直接先執行main</p>
+                    <p>基本輸入,根據不同型態 %後面要給予不同的格式, 第二個參數為變數的記憶體位置</p>
                 
                 </div>
                 <div class="commentary">
-                    <h3>printf("string");</h3>
+                    <h3>&var_name</h3>
                     <div class="underline"></div>
-                    <p>標準輸出函式,可以輸出字串</p>
+                    <p>變數記憶體位置取值,變數前方加一個&符號,可以取出變數所存在的記憶體位置</p>
                     
                 </div>
                 <div class="commentary">
-                    <h3>system("PAUSE");</h3>
+                    <h3>printf("%f",var_name)</h3>
                     <div class="underline"></div>
-                    <p>可以使程式暫時停下的方法,程式設計者常用於debug,按下ENTER程式才會繼續執行</p>
+                    <p>輸出除了字串外,可以在字串中塞入變數,跟輸出一樣是以%塞入變數,後面接上變數型態</p>
                 </div>
                 <div class="commentary">
-                    <h3>return 0;</h3>
+                    <h3>%.2f</h3>
                     <div class="underline"></div>
-                    <p>回傳值,在main中回傳值的主要意義是告知系統此程式已經正常結束</p>
+                    <p>浮點數專用的輸出型態,在f前面加上.數字 可以強迫輸出小數後幾位數</p>
+                </div>
+                <div class="commentary">
+                    <h3>基本運算</h3>
+                    <div class="underline"></div>
+                    <p>除了基本的加減乘除(+ - * /) 還有%可以取餘數, 輸出的時候可以直接把運算式塞入變數中</p>
                 </div>
          
             </div>
         </div>
-        
     </section>
 </body>
 </html>

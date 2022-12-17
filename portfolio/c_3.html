@@ -16,46 +16,49 @@
 </head>
 <body>
     <section class="port">
-
         <header class="c_header">
-            <h4>基本框架與輸出</h4>
-            <p>基礎的C語言框架,與基本輸出函式介紹與應用</p>
+            <h4>條件判斷式</h4>
+            <p>C語言的條件判斷式</p>
         </header>
         
         <div class="port-container">
-            <img src="./img_c/1.png" alt="">
+            <img src="./img_c/3.png" alt="">
             <div class="commentarys">
                 <div class="commentary">
-                    <h3>#include&lt;標頭檔名稱&gt;</h3>
+                    <h3>if(condition){ code... }</h3>
                     <div class="underline"></div>
-                    <p>引用函式庫,圖示中為最常用的其中兩種函式庫</p>
+                    <p>條件判斷式結構的開頭,一般分為三層if(開頭) else if(其他條件) else(條件之外)</p>
                 </div>
                 <div class="commentary">
-                    <h3>int main(){}</h3>
+                    <h3>if</h3>
                     <div class="underline"></div>
-                    <p>主函式框架,當程式執行時,會直接先執行main</p>
+                    <p>條件判斷式結構開頭,必須存在,否則不為一個符合規則的程式</p>
                 
                 </div>
                 <div class="commentary">
-                    <h3>printf("string");</h3>
+                    <h3>else if</h3>
                     <div class="underline"></div>
-                    <p>標準輸出函式,可以輸出字串</p>
+                    <p>當判斷的條件不只一種時可以加上else if 不一定需要存在</p>
                     
                 </div>
                 <div class="commentary">
-                    <h3>system("PAUSE");</h3>
+                    <h3>else</h3>
                     <div class="underline"></div>
-                    <p>可以使程式暫時停下的方法,程式設計者常用於debug,按下ENTER程式才會繼續執行</p>
+                    <p>當除了前述的條件外,其餘的皆為同一種處理方式,則用else</p>
                 </div>
                 <div class="commentary">
-                    <h3>return 0;</h3>
+                    <h3>範例中條件結構的區塊並未用大括號包裹</h3>
                     <div class="underline"></div>
-                    <p>回傳值,在main中回傳值的主要意義是告知系統此程式已經正常結束</p>
+                    <p>在C語言中,若條件區塊的code僅有一行,則大括號可以省略</p>
+                </div>
+                <div class="commentary">
+                    <h3>條件運算子(這邊只介紹經常使用的)</h3>
+                    <div class="underline"></div>
+                    <p>==(等於) &lt;(小於) &gt;(大於) &lt;=(小於等於) &gt;=(大於等於) &&(and) ||(or)</p>
                 </div>
          
             </div>
         </div>
-        
     </section>
 </body>
 </html>

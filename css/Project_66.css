@@ -357,6 +357,8 @@ portfolio
 */
 .portfolio_c {
   top: calc(100vh + 80px);
+  height: 100vh;
+  position: relative;
 }
 .portfolio_c h4 {
   color: var(--clr-grey-5);
@@ -372,13 +374,16 @@ portfolio
 .portfolio_c .c_button {
   position: relative;
   margin: 1rem;
-  margin-left: 4rem;
-  text-align: center;
+  margin-left: 3rem;
   max-width: 14rem;
+  display: grid;
+  text-align: center;
+  place-items: center;
+  margin-bottom: 2rem;
   background-color: var(--clr-grey-10);
-  padding: 1.5rem 1.5rem;
+  padding: 1.2rem 1rem;
   border-radius: 3px;
-  box-shadow: var(--light-shadow);
+  box-shadow: var(--dark-shadow);
 }
 .portfolio_c .c_button::after {
   content: "";
@@ -387,15 +392,15 @@ portfolio
   top: 0;
   width: 100%;
   height: 100%;
-  border: 0.33rem solid white;
+  border: 0.25rem inset white;
   border-radius: 3px;
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
   opacity: 0;
   transform: scale(0, 0);
 }
 .portfolio_c .c_button:hover::after {
   opacity: 0.7;
-  transform: scale(0.9);
+  transform: scale(1);
 }
 .portfolio_c .c_button:hover {
   background-color: var(--clr-grey-5);
@@ -446,6 +451,8 @@ portfolio
 .port img {
   margin-top: 2rem;
   margin: 0 auto;
+  max-width: 400px;
+  object-fit: cover;
 }
 .port-container {
   margin-top: 2rem;
@@ -462,6 +469,7 @@ portfolio
 }
 .port .commentarys .commentary {
   padding: 1rem;
+  width: fit-content;
 }
 .port .commentarys .commentary:hover {
   background-color: antiquewhite;
@@ -471,4 +479,14 @@ portfolio
   margin-top: 0.5rem;
   background-color: var(--clr-grey-8);
   margin-bottom: 0.5rem;
+}
+.port .c_header {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  place-items: center;
+}
+.port .c_header p {
+  padding-left: 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
 }/*# sourceMappingURL=Project_66.css.map */
