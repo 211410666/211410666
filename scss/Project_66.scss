@@ -376,10 +376,69 @@ portfolio
     .underline{
         margin-bottom: 2rem;
     }
+    &-center{
+        padding: 4rem 0;
+    }
+    &-container{
+        padding-right: 10rem;
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: 20% 80%;
+        height: 80vh;
+    }
+}
 
+
+.port{
+    position: relative;
+    h4{
+        background-color: var(--clr-green-10);
+        padding: 0.5rem 2rem;
+        color: var(--clr-grey-5);
+        font-size: 1.5rem;
+        letter-spacing: 0.2rem;
+        margin-bottom: 0.5rem;
+        border: 0.5px solid transparent;
+        box-shadow: var(--light-shadow);
+        width: fit-content;
+    }
+    h3{
+        color: var(--clr-grey-4);
+        font-size: 1.8rem;
+    }
+    p{
+        color: var(--clr-grey-6);
+        font-size: 1rem;
+        letter-spacing: 0.15rem;
+    }
+    img{
+        margin-top: 2rem;
+        margin: 0 auto;
+    }
     &-container{
         margin-top: 2rem;
         display: grid;
-        grid-template-columns: 40% 60%;
+        grid-template-columns: 30% 70%;
+    }
+    .commentarys{
+        
+        padding-left: 7rem;
+        p{
+            padding-left: 2rem;
+            font-weight: bold;
+            color: rgb(212, 137, 102);
+        }
+        .commentary{
+            padding: 1rem;
+            &:hover{
+                background-color: antiquewhite;
+            }
+        }
+    }
+    .underline{
+        width: 20rem;
+        margin-top: 0.5rem;
+        background-color: var(--clr-grey-8);
+        margin-bottom: 0.5rem;
     }
 }

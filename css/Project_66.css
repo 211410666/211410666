@@ -24,6 +24,7 @@
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --transition: all 0.3s linear;
+  --clr-green-10:hsl(127, 35%, 90%);
 }
 
 *,
@@ -408,8 +409,66 @@ portfolio
 .portfolio_c .underline {
   margin-bottom: 2rem;
 }
+.portfolio_c-center {
+  padding: 4rem 0;
+}
 .portfolio_c-container {
+  padding-right: 10rem;
   margin-top: 2rem;
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 20% 80%;
+  height: 80vh;
+}
+
+.port {
+  position: relative;
+}
+.port h4 {
+  background-color: var(--clr-green-10);
+  padding: 0.5rem 2rem;
+  color: var(--clr-grey-5);
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 0.5rem;
+  border: 0.5px solid transparent;
+  box-shadow: var(--light-shadow);
+  width: fit-content;
+}
+.port h3 {
+  color: var(--clr-grey-4);
+  font-size: 1.8rem;
+}
+.port p {
+  color: var(--clr-grey-6);
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+}
+.port img {
+  margin-top: 2rem;
+  margin: 0 auto;
+}
+.port-container {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+.port .commentarys {
+  padding-left: 7rem;
+}
+.port .commentarys p {
+  padding-left: 2rem;
+  font-weight: bold;
+  color: rgb(212, 137, 102);
+}
+.port .commentarys .commentary {
+  padding: 1rem;
+}
+.port .commentarys .commentary:hover {
+  background-color: antiquewhite;
+}
+.port .underline {
+  width: 20rem;
+  margin-top: 0.5rem;
+  background-color: var(--clr-grey-8);
+  margin-bottom: 0.5rem;
 }/*# sourceMappingURL=Project_66.css.map */
