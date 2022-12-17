@@ -288,29 +288,98 @@ index
 */
 
 .index{
-    
+    display: grid;
+    grid-template-columns: 40% 60%;
     overflow: hidden;
     
-    &::before{
-        content: "";
-        position: absolute;
-        top: 80px;
-        width: 100%;
-        height: calc(100vh);
-        background-image: url("../img/bg.png");
-        opacity: 0.25;
-        
-    }
+    
+    
 }
 
 @media screen and (max-width:1100px) {
     .index{
-        content: "";
+
+        &-img{
+            
+            position: relative;
+            top: -20px;
+            display: block;
+            border-radius: 5px;
+            box-shadow: var(--light-shadow);
+        }
         position: absolute;
-        top: 60px;
         width: 100%;
-        height: calc(100vh - 60px);
-        background-image: url("../img/bg.png");
-        opacity: 0.25;
+        height: calc(100vh);
+            
+    }
+}
+
+
+
+
+/*
+=======================
+portfolio
+=======================
+*/
+.portfolio_c{
+    top: calc(100vh + 80px);
+    h4{
+        color: var(--clr-grey-5);
+        font-size: 1.2rem;
+        letter-spacing: 0.2rem;
+        margin-bottom: 0.5rem;
+    }
+    p{
+        color: var(--clr-grey-6);
+        font-size: 0.8rem;
+        letter-spacing: 0.2rem;
+    }
+    .c_button{
+        position: relative;
+        margin: 1rem;
+        margin-left: 4rem;
+        text-align: center;
+        max-width: 14rem;
+        background-color: var(--clr-grey-10);
+        padding: 1.5rem 1.5rem;
+        border-radius: 3px;
+        box-shadow: var(--light-shadow);
+        &::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            border: 0.33rem solid white;
+            border-radius: 3px;
+            transition: all 0.5s linear;
+            opacity: 0;
+            transform: scale(0,0);
+        }
+        &:hover::after{
+            opacity: 0.7;
+            transform: scale(0.9);
+            
+        }
+        &:hover{
+            background-color: var(--clr-grey-5);
+            h4{
+                color: white;
+            }
+            p{
+                color: var(--clr-grey-9);
+            }
+        }
+    }
+    .underline{
+        margin-bottom: 2rem;
+    }
+
+    &-container{
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: 40% 60%;
     }
 }
