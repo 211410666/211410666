@@ -21,7 +21,7 @@ window.addEventListener('resize', function () {
 });
 
 window.addEventListener('scroll', function () {
-    if (window.pageYOffset > 20) {
+    if (window.pageYOffset > 0) {
       nav.classList.add('nav-fix');
     } else {
       nav.classList.remove('nav-fix');

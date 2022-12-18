@@ -287,7 +287,9 @@ index
 =======================
 */
 
+
 .index{
+    margin-top: 3rem;
     display: grid;
     grid-template-columns: 40% 60%;
     overflow: hidden;
@@ -320,7 +322,7 @@ portfolio
 =======================
 */
 .portfolio_c{
-    top: calc(100vh + 80px);
+    top: 80px;
     height: 100vh;
     position: relative;
     
@@ -380,7 +382,7 @@ portfolio
         margin-bottom: 2rem;
     }
     &-center{
-        padding: 4rem 0;
+        padding: 1rem;
     }
     &-container{
         padding-right: 10rem;
@@ -415,13 +417,12 @@ portfolio
         letter-spacing: 0.15rem;
     }
     img{
-        margin-top: 2rem;
         margin: 0 auto;
         max-width: 400px;
         object-fit: cover;
     }
     &-container{
-        margin-top: 2rem;
+        margin-top: 1rem;
         display: grid;
         grid-template-columns: 30% 70%;
     }
@@ -434,7 +435,7 @@ portfolio
             color: rgb(212, 137, 102);
         }
         .commentary{
-            padding: 1rem;
+            padding-bottom: 1rem;
             &:hover{
                 background-color: antiquewhite;
             }
