@@ -417,7 +417,9 @@ portfolio
         letter-spacing: 0.15rem;
     }
     img{
+
         margin: 0 auto;
+        margin-top: 2rem;
         max-width: 400px;
         object-fit: cover;
     }
@@ -430,12 +432,12 @@ portfolio
         
         padding-left: 7rem;
         p{
-            padding-left: 2rem;
+            padding-left: 1.5rem;
             font-weight: bold;
             color: rgb(212, 137, 102);
         }
         .commentary{
-            padding-bottom: 1rem;
+            padding: 2rem;
             &:hover{
                 background-color: antiquewhite;
             }
