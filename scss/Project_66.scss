@@ -391,6 +391,17 @@ portfolio
         grid-template-columns: 20% 80%;
         height: 80vh;
     }
+    @media screen and (max-width:1300px) {
+        h2{
+            font-size: 2rem;
+        }
+        h4{
+            font-size: 1rem;
+        }
+        .c_button{
+            padding: 1rem 0.8rem;
+        }
+    }
 }
 
 
@@ -443,6 +454,7 @@ portfolio
             }
             width: fit-content;
         }
+        
     }
     .underline{
         width: 20rem;
@@ -451,13 +463,42 @@ portfolio
         margin-bottom: 0.5rem;
     }
     .c_header{
-        display: grid;
+        display: grid;  
         grid-template-columns: max-content max-content;
         place-items: center;
         p{
             padding-left: 2rem;
             font-size: 1.2rem;
             font-weight: bold;
+        }
+    }
+    @media screen and (max-width:1300px) {
+        img{
+            max-width: 200px;
+        }
+        h4{
+            font-size: 1rem;
+        }
+        h3{
+            font-size: 1rem
+        }
+        p{
+            font-size: 0.8rem;
+        }
+        .commentarys{
+        
+            padding-left: 3rem;
+            .commentary{
+                padding: 1rem;
+            }
+            
+        }
+        .c_header{
+            p{
+                padding-left: 1.5rem;
+                font-size: 1rem;
+                font-weight: bold;
+            }
         }
     }
 }

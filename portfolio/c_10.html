@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/Project_66.css">
+</head>
+<body>
+    <section class="port">
+        <header class="c_header">
+            <h4>結構</h4>
+            <p>可以想像成C語言用來打包同一個類別的資料,裡面包含各種不同型態的變數,比起陣列可讀性更好</p>
+        </header>
+        
+        <div class="port-container">
+            <div class="con_img">
+                <img src="./img_c/10-1.png" alt="">
+                <img src="./img_c/10-2.png" alt="">
+            </div>
+            
+            <div class="commentarys">
+                <div class="commentary">
+                    <h3>strcut s_name{var1; var2; var3; var4;......}</h3>
+                    <div class="underline"></div>
+                    <p>s_name為自定義的結構名稱,大括號內為類別所包含的變數,可包含結構自己本身的指標</p>
+                </div>
+                <div class="commentary">
+                    <h3>如何使用結構變數</h3>
+                    <div class="underline"></div>
+                    <p>
+                        結構在主程式內也視為一個變數,大小為所有變數的總和.宣告的方法為struct s_name;
+                    </p>
+                </div>
+                <div class="commentary">
+                    <h3>如何使用結構內的變數</h3>
+                    <div class="underline"></div>
+                    <p>在後面用到變數的時候,以s_name.var 來讀取結構內的變數值</p>
+                </div>
+                <div class="commentary">
+                    <h3>結構指標</h3>
+                    <div class="underline"></div>
+                    <p>在宣告的是結構指標的情況下(如struct *s_name),那我們要使用指標的方式跟一般變數不同,s_name->var</p>
+                </div>
+         
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -425,6 +425,17 @@ portfolio
   grid-template-columns: 20% 80%;
   height: 80vh;
 }
+@media screen and (max-width: 1300px) {
+  .portfolio_c h2 {
+    font-size: 2rem;
+  }
+  .portfolio_c h4 {
+    font-size: 1rem;
+  }
+  .portfolio_c .c_button {
+    padding: 1rem 0.8rem;
+  }
+}
 
 .port {
   position: relative;
@@ -490,4 +501,31 @@ portfolio
   padding-left: 2rem;
   font-size: 1.2rem;
   font-weight: bold;
-}/*# sourceMappingURL=Project_66.css.map */
+}
+@media screen and (max-width: 1300px) {
+  .port img {
+    max-width: 200px;
+  }
+  .port h4 {
+    font-size: 1rem;
+  }
+  .port h3 {
+    font-size: 1rem;
+  }
+  .port p {
+    font-size: 0.8rem;
+  }
+  .port .commentarys {
+    padding-left: 3rem;
+  }
+  .port .commentarys .commentary {
+    padding: 1rem;
+  }
+  .port .c_header p {
+    padding-left: 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+}
+
+/*# sourceMappingURL=Project_66.css.map */

@@ -23,6 +23,15 @@ function change(index) {
         case 7:
             p.innerHTML = `<iframe src="./c_7.html" name="mainframe" width="100%" marginwidth="0" marginheight="0" onload="Javascript:SetCwinHeight()"  scrolling="No" frameborder="0" id="mainframe"  ></iframe>`
             break;
+        case 8:
+            p.innerHTML = `<iframe src="./c_8.html" name="mainframe" width="100%" marginwidth="0" marginheight="0" onload="Javascript:SetCwinHeight()"  scrolling="No" frameborder="0" id="mainframe"  ></iframe>`
+            break;
+        case 9:
+            p.innerHTML = `<iframe src="./c_9.html" name="mainframe" width="100%" marginwidth="0" marginheight="0" onload="Javascript:SetCwinHeight()"  scrolling="No" frameborder="0" id="mainframe"  ></iframe>`
+            break;
+        case 10:
+            p.innerHTML = `<iframe src="./c_10.html" name="mainframe" width="100%" marginwidth="0" marginheight="0" onload="Javascript:SetCwinHeight()"  scrolling="No" frameborder="0" id="mainframe"  ></iframe>`
+            break;
     }
 }
 function SetCwinHeight()

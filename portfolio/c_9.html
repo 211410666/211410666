@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/Project_66.css">
+</head>
+<body>
+    <section class="port">
+        <header class="c_header">
+            <h4>河內塔</h4>
+            <p>經典遞迴範例</p>
+        </header>
+        
+        <div class="port-container">
+            <img src="./img_c/9-1.png" alt="">
+            <div class="commentarys">
+                <div class="commentary">
+                    <h3>程式邏輯</h3>
+                    <div class="underline"></div>
+                    <p>有三根柱子分別為ABC,盤子數量不等,範例中以三個為例,所有的盤子小從到大,從上到小分別為1,2,3放在A柱,並要把所有的盤子依照原本的順序放在C柱上,盤子可以隨意移動,但不能移動到比自己小的盤子上</p>
+                </div>
+                <div class="commentary">
+                    <h3>圖示</h3>
+                    <div class="underline"></div>
+                    <img src="./img_c/9-2.png" alt="">
+                </div>
+                <div class="commentary">
+                    <h3>程式解析</h3>
+                    <div class="underline"></div>
+                    <p>
+                        河內塔的程式碼非常難懂,但其實仔細看他邏輯非常簡單,我們只需要處理最上面兩個盤子,程式碼也是,我們以下逐行解說
+                    </p>
+                </div>
+                <div class="commentary">
+                    <h3>if(n==1)printf("盤子n從A移動到C")</h3>
+                    <div class="underline"></div>
+                    <p>由於我們的遞迴跑了三次,所以我們從頭開始算A B C(n=3) A C B(n=2) A B C(n=3) 盤子1是從A到C</p>
+                </div>
+                <div class="commentary">
+                    <h3>h(n-1,A,C,B)</h3>
+                    <div class="underline"></div>
+                    <p>這行就是呼應第一次的計算 把BC做交換再交換</p>
+                </div>
+                <div class="commentary">
+                    <h3>printf("盤子%d從%c移到%c\n",n, A, C);</h3>
+                    <div class="underline"></div>
+                    <p>第一次跑到這行程式碼,是n=2的情況 也就是 A C B 2從A移動到B</p>
+                </div>
+                <div class="commentary">
+                    <h3>h(n-1, B, A, C);</h3>
+                    <div class="underline"></div>
+                    <p>再第一次n=2執行到這行時,是盤子1要從C移動到B的情況, 這時候柱子為 A C B 所以我們要這樣呼叫 B(就是原本的C) A C(就是原本的B)</p>
+                </div>
+                <div class="commentary">
+                    <h3>為什麼不用繼續往下思考了?</h3>
+                    <div class="underline"></div>
+                    <p>因為在河內塔的邏輯中,當1,2移動到B時 這時候視為一體,當程式又從頭跑一次時,邏輯等同把3移動到C 想辦法把1+2移動到C</p>
+                </div>    
+
+         
+            </div>
+        </div>
+    </section>
+</body>
+</html>
