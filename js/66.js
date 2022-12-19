@@ -15,7 +15,8 @@ window.addEventListener('resize', function () {
     closeBtn.style.display = "none";
     sidebar.classList.remove('show-sidebar');
   }
-  else if(closeBtn.style.display=="none") {
+  else if (closeBtn.style.display == "none") {
+    console.log('navBtn', navBtn);
     navBtn.style.display = "block";
   }
 });

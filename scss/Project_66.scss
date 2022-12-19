@@ -342,9 +342,10 @@ portfolio
         margin: 1rem;
         margin-left: 3rem;
         max-width: 14rem;
-        display: grid;
+        display: flex;
         text-align: center;
-        place-items: center;
+        align-items: center;
+        justify-content: center;
         margin-bottom: 2rem;
         background-color: var(--clr-grey-10);
         padding: 1.2rem 1rem;
@@ -383,6 +384,8 @@ portfolio
     }
     &-center{
         padding: 1rem;
+        width: 100%;
+        margin-top: 2rem;
     }
     &-container{
         padding-right: 10rem;
@@ -390,6 +393,7 @@ portfolio
         display: grid;
         grid-template-columns: 20% 80%;
         height: 80vh;
+        width: 100vw;
     }
     @media screen and (max-width:1300px) {
         h2{
@@ -399,7 +403,117 @@ portfolio
             font-size: 1rem;
         }
         .c_button{
+            padding: 0.8rem 0.8rem;
+        }
+        .c_button{
+            width: 100%;
+            height: fit-content;
+        }
+    }
+    @media screen and (max-width:1100px) {
+        h2{
+            font-size: 2rem;
+        }
+        h4{
+            font-size: 1rem;
+        }
+        .c_button{
+            padding: 0.8rem 0.8rem;
+        }
+        &-container{
+            display: flex;
+            flex-direction: column;
+        }
+        &-option{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            gap: 1.5rem;
+        }
+        .c_button{
+            width: 100%;
+            height: fit-content;
+            margin-bottom: 0;
+        }
+    }
+    @media screen and (max-width:996px) {
+        h2{
+            font-size: 2rem;
+        }
+        h4{
+            font-size: 1rem;
+        }
+        .c_button{
             padding: 1rem 0.8rem;
+        }
+        &-container{
+            display: flex;
+            flex-direction: column;
+        }
+        &-option{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            gap: 1.5rem;
+        }
+        .c_button{
+            width: 100%;
+            height: fit-content;
+        }
+    }
+    @media screen and (max-width:850px) {
+        h2{
+            font-size: 2rem;
+        }
+        h4{
+            font-size: 0.7rem;
+        }
+        .c_button{
+            padding: 1rem 0.8rem;
+        }
+        &-container{
+            display: flex;
+            flex-direction: column;
+        }
+        &-option{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 1.5rem;
+        }
+        .c_button{
+            width: 100%;
+            height: fit-content;
+        }
+    }
+    @media screen and (max-width:768px) {
+        h2{
+            font-size: 1rem;
+        }
+        h4{
+            font-size: 8px;
+        }
+        &-container{
+            display: flex;
+            flex-direction: column;
+        }
+        &-option{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 1rem;
+            
+        }
+        .c_button{
+            
+            padding: 0.5rem;
+            margin: 0;
+            width: 80px;
+            height: 40px;
+            p{
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+        }
+        .underline{
+            width: 80%;
         }
     }
 }
@@ -472,7 +586,7 @@ portfolio
             font-weight: bold;
         }
     }
-    @media screen and (max-width:1300px) {
+    @media screen and (max-width:1100px) {
         img{
             max-width: 200px;
         }
@@ -500,6 +614,66 @@ portfolio
                 font-weight: bold;
             }
         }
+    }
+    @media screen and (max-width:996px) {
+        img{
+            max-width: 200px;
+        }
+        h4{
+            font-size: 1rem;
+        }
+        h3{
+            font-size: 1rem
+        }
+        p{
+            font-size: 0.8rem;
+        }
+        .commentarys{
+        
+            padding-left: 3rem;
+            .commentary{
+                padding: 1rem;
+            }
+            
+        }
+        .c_header{
+            p{
+                padding-left: 1.5rem;
+                font-size: 1rem;
+                font-weight: bold;
+            }
+        }
+    }
+    @media screen and (max-width:768px) {
+        img{
+            max-width: 250px;
+        }
+        &-container{
+            display: flex;
+            flex-direction: column;
+        }
+        .c_header{
+            display: flex;  
+            flex-direction: column;
+            p{
+
+                margin-top: 1rem;
+                font-size: 1rem;
+                font-weight: bold;
+            }
+        }
+        .commentarys{
+        
+            padding-left: 0;
+            .commentary{
+                padding: 1rem;
+            }
+            p{
+                padding-left: 0;
+            }
+            
+        }
+        
     }
 }
 
