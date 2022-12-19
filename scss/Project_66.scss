@@ -562,11 +562,12 @@ portfolio
             color: rgb(212, 137, 102);
         }
         .commentary{
+            width: 100vw;
+            word-wrap: break-word;
             padding: 2rem;
             &:hover{
                 background-color: antiquewhite;
             }
-            width: fit-content;
         }
         
     }

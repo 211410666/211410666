@@ -592,8 +592,9 @@ portfolio
   color: rgb(212, 137, 102);
 }
 .port .commentarys .commentary {
+  width: 100vw;
+  word-wrap: break-word;
   padding: 2rem;
-  width: fit-content;
 }
 .port .commentarys .commentary:hover {
   background-color: antiquewhite;
