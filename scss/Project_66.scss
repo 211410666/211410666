@@ -313,6 +313,25 @@ index
     }
 }
 
+@media screen and (max-width:768px) {
+    .index{
+        display: flex;
+        flex-direction: column;
+        &-img{
+            
+            position: relative;
+            top: -20px;
+            display: block;
+            border-radius: 5px;
+            box-shadow: var(--light-shadow);
+        }
+        position: absolute;
+        width: 100%;
+        height: calc(100vh);
+            
+    }
+}
+
 
 
 
@@ -678,3 +697,93 @@ portfolio
     }
 }
 
+
+
+
+.learns{
+    position: relative;
+    top: 80px;
+    left: 2rem;
+    h4{
+        background-color: var(--clr-green-10);
+        padding: 0.5rem 0.8rem;
+        color: var(--clr-grey-5);
+        font-size: 1.2rem;
+        letter-spacing: 0.2rem;
+        margin-bottom: 0.5rem;
+        border: 0.5px solid transparent;
+        box-shadow: var(--light-shadow);
+        width: fit-content;
+        &:hover{
+            background-color: var(--clr-grey-9);
+        }
+    }
+    h3{
+        color: var(--clr-grey-4);
+        font-size: 1.8rem;
+    }
+    p{
+        color: rgb(212, 137, 102);
+        font-size: 0.9rem;
+        letter-spacing: 0.15rem;
+        padding-left: 1rem;
+    }
+    
+    @media screen and (max-width:1100px) {
+        top: 60px;
+    }
+}
+
+
+.learn{
+    height: fit-content;
+    &-title{
+        margin-top: 2rem;
+        width: fit-content;
+    }
+    .underline{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    &-container{
+        padding: 1rem;
+        margin-bottom: 1rem;
+        width: fit-content;
+        &:hover{
+            background-color: blanchedalmond;
+            border: 2px dashed var(--clr-grey-5);
+            border-radius: 4px;
+        }
+    }
+    
+}
+
+.dropleft{
+    
+    
+    position: fixed;
+    right: 3rem;
+    top: 8rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    &::after{
+        position: absolute;
+        content: '';
+        background-color: rgb(206, 225, 219);
+        left: -20%;
+        top: -10px;
+        width: 140%;
+        height: calc(100% + 20px);
+        z-index: -1;
+        box-shadow: var(--dark-shadow);
+        border-radius: 5px;
+    }
+    a{
+        padding: 0.5rem 0;
+        color: var(--clr-grey-3);
+        &:hover{
+            color: red;
+        }
+    }
+}

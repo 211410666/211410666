@@ -351,6 +351,22 @@ index
     box-shadow: var(--light-shadow);
   }
 }
+@media screen and (max-width: 768px) {
+  .index {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+  }
+  .index-img {
+    position: relative;
+    top: -20px;
+    display: block;
+    border-radius: 5px;
+    box-shadow: var(--light-shadow);
+  }
+}
 /*
 =======================
 portfolio
@@ -691,4 +707,91 @@ portfolio
   .port .commentarys p {
     padding-left: 0;
   }
-}/*# sourceMappingURL=Project_66.css.map */
+}
+
+.learns {
+  position: relative;
+  top: 80px;
+  left: 2rem;
+}
+.learns h4 {
+  background-color: var(--clr-green-10);
+  padding: 0.5rem 0.8rem;
+  color: var(--clr-grey-5);
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 0.5rem;
+  border: 0.5px solid transparent;
+  box-shadow: var(--light-shadow);
+  width: fit-content;
+}
+.learns h4:hover {
+  background-color: var(--clr-grey-9);
+}
+.learns h3 {
+  color: var(--clr-grey-4);
+  font-size: 1.8rem;
+}
+.learns p {
+  color: rgb(212, 137, 102);
+  font-size: 0.9rem;
+  letter-spacing: 0.15rem;
+  padding-left: 1rem;
+}
+@media screen and (max-width: 1100px) {
+  .learns {
+    top: 60px;
+  }
+}
+
+.learn {
+  height: fit-content;
+}
+.learn-title {
+  margin-top: 2rem;
+  width: fit-content;
+}
+.learn .underline {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.learn-container {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  width: fit-content;
+}
+.learn-container:hover {
+  background-color: blanchedalmond;
+  border: 2px dashed var(--clr-grey-5);
+  border-radius: 4px;
+}
+
+.dropleft {
+  position: fixed;
+  right: 3rem;
+  top: 8rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.dropleft::after {
+  position: absolute;
+  content: "";
+  background-color: rgb(206, 225, 219);
+  left: -20%;
+  top: -10px;
+  width: 140%;
+  height: calc(100% + 20px);
+  z-index: -1;
+  box-shadow: var(--dark-shadow);
+  border-radius: 5px;
+}
+.dropleft a {
+  padding: 0.5rem 0;
+  color: var(--clr-grey-3);
+}
+.dropleft a:hover {
+  color: red;
+}
+
+/*# sourceMappingURL=Project_66.css.map */
