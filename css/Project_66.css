@@ -765,12 +765,23 @@ portfolio
 .learn-container {
   padding: 1rem;
   width: fit-content;
-  margin-bottom: 1rem;
 }
 .learn-container:hover {
   background-color: blanchedalmond;
   border: 2px dashed var(--clr-grey-5);
   border-radius: 4px;
+}
+.learn-container .code {
+  background-color: rgb(214, 239, 203);
+  width: fit-content;
+  color: rgb(149, 66, 98);
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+.learn img {
+  display: block;
+  max-width: 100%;
+  margin: 2rem 0;
 }
 
 .overcome {
@@ -787,6 +798,15 @@ portfolio
   border-radius: 4px;
   width: 95%;
   margin: 0 auto;
+  margin-bottom: 1rem;
+}
+.overcome .learn-container::after {
+  content: "";
+  left: -2.5px;
+  top: -2.5px;
+  width: calc(100% + 5px);
+  height: calc(100% + 5px);
+  border: 5px dotted blanchedalmond;
 }
 .overcome h4 {
   padding: 0.5rem 1rem;
@@ -839,4 +859,26 @@ portfolio
 }
 .dropleft a:hover {
   color: red;
-}/*# sourceMappingURL=Project_66.css.map */
+}
+
+.link_contect {
+  display: flex;
+}
+.link_contect .learn-container-title::after {
+  border: 5px dotted var(--clr-grey-10);
+}
+.link_contect h4 {
+  margin-right: 1rem;
+  font-size: 0.5rem;
+  background-color: rgb(145, 48, 29);
+}
+.link_contect h4:hover {
+  background-color: green;
+}
+@media screen and (max-width: 996px) {
+  .link_contect {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=Project_66.css.map */
