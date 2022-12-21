@@ -289,48 +289,14 @@ index
 
 
 .index{
-    margin-top: 3rem;
+
+    position: absolute;
+    left: 0;
+    top: 80px;
     display: grid;
     grid-template-columns: 40% 60%;
-    overflow: hidden;
 }
 
-@media screen and (max-width:1100px) {
-    .index{
-
-        &-img{
-            
-            position: relative;
-            top: -20px;
-            display: block;
-            border-radius: 5px;
-            box-shadow: var(--light-shadow);
-        }
-        position: absolute;
-        width: 100%;
-        height: calc(100vh);
-            
-    }
-}
-
-@media screen and (max-width:768px) {
-    .index{
-        display: flex;
-        flex-direction: column;
-        &-img{
-            
-            position: relative;
-            top: -20px;
-            display: block;
-            border-radius: 5px;
-            box-shadow: var(--light-shadow);
-        }
-        position: absolute;
-        width: 100%;
-        height: calc(100vh);
-            
-    }
-}
 
 
 
@@ -702,8 +668,9 @@ portfolio
 
 .learns{
     position: relative;
-    top: 100px;
-    left: 2rem;
+    width: 100vw;
+    top: 80px;
+    left: 0;
     h4{
         background-color: var(--clr-green-10);
         padding: 0.5rem 0.8rem;
@@ -739,12 +706,13 @@ portfolio
 .learn{
     height: fit-content;
     margin: 0 auto;
-    width: 85vw;
+    width: 75vw;
     border: 4px dashed var(--clr-grey-7);
     padding: 2rem;
     margin-bottom: 5rem;
     border-radius: 20px;
     background-color: var(--clr-grey-10);
+    position: relative;
     &-title{
         width: fit-content;
     }
@@ -773,6 +741,17 @@ portfolio
         display: block;
         max-width: 100%;
         margin: 2rem 0;
+    }
+    &::after{
+        position: absolute;
+        top: -8px;
+        left: -8px;
+        content: '';
+        width: calc(100% + 16px);
+        height: calc(100% + 16px);
+        border: 8px dotted rgb(199, 165, 92);
+        border-radius: 20px;
+        z-index: -1;
     }
     
 }

@@ -37,17 +37,81 @@ function change(index) {
 function SetCwinHeight()
 {
 var iframeid=document.getElementById("mainframe"); //iframe id
+    
   if (document.getElementById)
   {  
    if (iframeid && !window.opera)
    {  
     if (iframeid.contentDocument && iframeid.contentDocument.body.offsetHeight)
-     {  
+    {  
        iframeid.height = iframeid.contentDocument.body.offsetHeight;  
      }else if(iframeid.Document && iframeid.Document.body.scrollHeight)
-     {  
+    {  
        iframeid.height = iframeid.Document.body.scrollHeight;  
       }  
     }
    }
+}
+
+function demo(index)
+{
+    const p = document.querySelector(".content-section");
+    const i = document.getElementById("index");
+    i.style.display = "block";
+    i.style.paddingLeft = "0";
+    i.style.paddingTop = "0";
+    const check_f = document.getElementById("drop");
+    console.log(check_f)
+    if (check_f!=null) {
+        check_f.style.display = "none";
+    }
+    console.log('h', p);
+    switch (index) {
+        case 1:
+            p.innerHTML = `<iframe src="https://1111-sweb-1-n-demo-211410666-nizt.vercel.app/demo/w02_66/card_66.html" 
+            width="100%" height="100%" frameborder="0"/>`
+            break;
+        case 2:
+            p.innerHTML = `<iframe src="https://1111-sweb-1-n-demo-211410666-nizt.vercel.app/demo/w06_66/blog_66.html" 
+            width="100%" height="100%" frameborder="0"/>`
+            break;
+        case 3:
+            p.innerHTML = `<iframe src="https://1111-sweb-1-n-demo-211410666-nizt.vercel.app/demo/w09_66/multipage_66.html" 
+            width="100%" height="100%" frameborder="0"/>`
+            break;
+        case 4:
+            p.innerHTML = `<iframe src="https://1111-sweb-1-n-demo-211410666-nizt.vercel.app/demo/w15_66_portfolio/portfolio/index.html" 
+            width="100%" height="100%" frameborder="0"/>`
+            break;
+        
+    }
+}
+
+function demo_c(index)
+{
+    const p = document.querySelector(".content-section");
+    const i = document.getElementById("portfolio_c");
+    i.style.display = "block";
+    i.style.paddingLeft = "0";
+    i.style.paddingTop = "0";
+    console.log('h', p);
+    switch (index) {
+        case 1:
+            p.innerHTML = `<iframe src="https://1111-sweb-1-n-demo-211410666-nizt.vercel.app/demo/w02_66/card_66.html" 
+            width="100%" height="100%" frameborder="0"/>`
+            break;
+        case 2:
+            p.innerHTML = `<iframe src="https://1111-sweb-1-n-demo-211410666-nizt.vercel.app/demo/w06_66/blog_66.html" 
+            width="100%" height="100%" frameborder="0"/>`
+            break;
+        case 3:
+            p.innerHTML = `<iframe src="https://1111-sweb-1-n-demo-211410666-nizt.vercel.app/demo/w09_66/multipage_66.html" 
+            width="100%" height="100%" frameborder="0"/>`
+            break;
+        case 4:
+            p.innerHTML = `<iframe src="https://1111-sweb-1-n-demo-211410666-nizt.vercel.app/demo/w15_66_portfolio/portfolio/index.html" 
+            width="100%" height="100%" frameborder="0"/>`
+            break;
+        
+    }
 }

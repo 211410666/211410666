@@ -30,14 +30,14 @@
                         <div class="underline"></div>
                     </li>
                     <li class="drop-list">
-                        <a href="">課堂實作</a>
+                        <a href="#">課堂實作</a>
                         <i class="fa-sharp fa-solid fa-angle-down icon"></i>
                         <div class="underline"></div>
                         <div class="nav-form">
-                            <a href="">Card</a>
-                            <a href="">Blog</a>
-                            <a href="">Mutipage</a>
-                            <a href="">Resume</a>
+                            <a href="#" onclick="demo(1)">Card</a>
+                            <a href="#" onclick="demo(2)">Blog</a>
+                            <a href="#" onclick="demo(3)">Mutipage</a>
+                            <a href="#" onclick="demo(4)">Resume</a>
                         </div>
                     </li>
                     <li class="drop-list">
@@ -55,7 +55,7 @@
                         <div class="underline"></div>
                     </li>
                     <li>
-                        <a href="#">期末專題</a>
+                        <a href="./Learn_66.html">期末專題</a>
                         <div class="underline"></div>
                     </li>
                 </ul>
@@ -111,14 +111,14 @@
         <!-- end of sidebar -->
         
 
-        <div class="learns">
+        <div class="learns content-section" id="index">
             <article class="learn" id="question">
                 <section class="learn-title">
                     <h3>碰到的問題</h3>
                     <div class="underline"></div>
                 </section>
                 <div class="question">
-                    <a href="#display">
+                    <a href="#transition">
                         <section class="learn-container">
                             <h4>transition</h4>             
                             <div class="learn-container-contect">
@@ -126,7 +126,7 @@
                             </div>
                         </section>
                     </a>
-                    <a href="#display">
+                    <a href="#position">
                         <section class="learn-container">
                             <h4>position</h4>             
                             <div class="learn-container-contect">
@@ -134,7 +134,7 @@
                             </div>
                         </section>
                     </a>
-                    <a href="#display">
+                    <a href="#droplist">
                         <section class="learn-container">
                             <h4>droplist</h4>             
                             <div class="learn-container-contect">
@@ -142,7 +142,7 @@
                             </div>
                         </section>
                     </a>
-                    <a href="#display">
+                    <a href="#b_button">
                         <section class="learn-container">
                             <h4>響應式網頁按鈕</h4>             
                             <div class="learn-container-contect">
@@ -150,7 +150,7 @@
                             </div>
                         </section>
                     </a>
-                    <a href="#display">
+                    <a href="#breakpoint">
                         <section class="learn-container">
                             <h4>Size of Breakpoint</h4>             
                             <div class="learn-container-contect">
@@ -158,7 +158,7 @@
                             </div>
                         </section>
                     </a>
-                    <a href="#display">
+                    <a href="#iframe">
                         <section class="learn-container">
                             <h4>iframe</h4>             
                             <div class="learn-container-contect">
@@ -182,16 +182,16 @@
                     <h3>自主學習&問題解決</h3>
                     <div class="underline"></div>
                 </section>
-                <section class="link_contect">
-                    <a href=""><h4 class="learn-container-title">Transition</h4></a>
-                    <a href=""><h4 class="learn-container-title">Position</h4></a>
-                    <a href=""><h4 class="learn-container-title">Droplist</h4></a>
-                    <a href=""><h4 class="learn-container-title">響應式按鈕</h4></a>
-                    <a href=""><h4 class="learn-container-title">BreakPoint</h4></a>
-                    <a href=""><h4 class="learn-container-title">iframe</h4></a>
-                    <a href=""><h4 class="learn-container-title">Display</h4></a>
+                <section class="link_contect" >
+                    <a href="#transition"><h4 class="learn-container-title">Transition</h4></a>
+                    <a href="#position"><h4 class="learn-container-title">Position</h4></a>
+                    <a href="#droplist"><h4 class="learn-container-title">Droplist</h4></a>
+                    <a href="#b_button"><h4 class="learn-container-title">響應式按鈕</h4></a>
+                    <a href="#breakpoint"><h4 class="learn-container-title">BreakPoint</h4></a>
+                    <a href="#iframe"><h4 class="learn-container-title">iframe</h4></a>
+                    <a href="display"><h4 class="learn-container-title">Display</h4></a>
                 </section>
-                <section class="learn-container" id="display">
+                <section class="learn-container" id="transition">
                     <h4 class="learn-container-title">Transition</h4>
                     <div class="learn-container-contect">
                         <p>這次的專題中,在使用動畫時,碰到了許多困難,即使上網找了很多資料,仍然知之甚少. 觀看網路上的範例,和自己實作起來,發現完全不照邏輯跑. 所以我認為在動畫的部分牽扯的東西可能很多,但我現在仍不了解,只能把了解的部分應用在這次專題上</p>
@@ -203,7 +203,7 @@
                         <p>這個方法可以設定動畫的起始位置,對於發揮動畫的創意來說非常有用,像這次我在nav利用hover呼叫了underline的動畫,並由左開始跑</p>
                     </div>
                 </section>
-                <section class="learn-container" id="display">
+                <section class="learn-container" id="position">
                     <h4 class="learn-container-title">Position</h4>
                     <div class="learn-container-contect">
                         <p>這次的專題中,很多時候,會被絕對位置,相對位置搞得頭很痛,因為一開始理解的和實際上網頁所判讀的不一樣.最後多次測試才發現,原來相對和絕對,只跟父層比較,後來寫的時候,就比較順暢了</p>
@@ -215,7 +215,7 @@
                         <p>fixed不受任何框架影響,並且永遠顯示在指定的座標上,例如我右上角的link就是利用fixed</p>
                     </div>
                 </section>
-                <section class="learn-container" id="display">
+                <section class="learn-container" id="droplist">
                     <h4 class="learn-container-title">Droplist</h4>
                     <div class="learn-container-contect">
                         <p>下拉式選單是應用在nav中,資料量較大的頁面,會使用下拉式選單去分類,這個靈感是在老師在教手機響應式sidebar時,突然想到的.但是在實作上碰到許多困難,然而在網路上查到display:inline-block時,才成功實做出來</p>
@@ -227,7 +227,7 @@
                         <p>這個就是下拉式選單能夠實作的關鍵.做完上面兩個步驟時,當滑鼠移動到下拉式選單上,會直接消失,因為display又變成none,所以移動要拉下式選單上時,直接改變下拉式選單</p>
                     </div>
                 </section>
-                <section class="learn-container" id="display">
+                <section class="learn-container" id="b_button">
                     <h4 class="learn-container-title">響應式網頁按鈕</h4>
                     <div class="learn-container-contect">
                         <p>上課教到sidebar時,有教到closebtn和navbtn,我在看很多網站上的sidebar開關,其實都是在同一個位置,而且很多都是從上面滑下來,所以這邊我也想這樣去做</p>
@@ -239,7 +239,7 @@
                         <p>當時做到上面這個步驟以為完成了,但是在測試的過程中,發現如果只要Btn出現了,同時又放大畫面,那按鈕並不會消失,所以就去查詢js的語法中,有沒有監聽畫面大小的事件,後來發現有resize這個方法可以選,並使用window.outerWidth這個方法,藉由回傳畫面大小,去偵測是否需要按鈕,如果畫面夠大,把兩個按鈕都變成none</p>
                     </div>
                 </section>
-                <section class="learn-container" id="display">
+                <section class="learn-container" id="breakpoint">
                     <h4 class="learn-container-title">BreakPoint</h4>
                     <div class="learn-container-contect">
                         <p>這個部分就是討論Breakpoint怎麼設定的,由於我在寫這個網站時,每個頁面由於寫的時期不同,根據上課內容的進步,排版,格式等等彈性的幅度也完全不一樣,所以在設定斷點時,我是分別每個網頁去用檢查工具慢慢試出來的,並挑選自己認為最不影響外觀的情況下去設定.於是每個網頁的斷點是完全不同的</p>
@@ -247,7 +247,7 @@
                         <p>當然,最大值的部分都是以平板,手機的通用格式去設定, 切換手機平板的尺寸一定要大於手機平板的尺寸,在達到設備最大寬度前,就先更換排版</p>
                     </div>
                 </section>
-                <section class="learn-container" id="display">
+                <section class="learn-container" id="iframe">
                     <h4 class="learn-container-title">iframe</h4>
                     <div class="learn-container-contect">
                         <p>上課的時候就已經有頻繁的在js中使用iframe的概念,去將其他頁面塞入目前的頁面,但是在實際操作時,是有碰到困難的,iframe不只有很醜的框線,而且資料太多還有卷軸,非常難看,於是在上網查找資料時,在js中,解決了這一點</p>
@@ -289,7 +289,7 @@
             
             
             
-        <div class="dropleft">
+        <div class="dropleft" id="drop">
             <a href="#question">問題</a>
             <a href="#overcome">自主學習</a>
             <a href="#experience">學習心得</a>
