@@ -358,6 +358,7 @@ portfolio
   font-size: 1.2rem;
   letter-spacing: 0.2rem;
   margin-bottom: 0.5rem;
+  word-wrap: break-all;
 }
 .portfolio_c p {
   color: var(--clr-grey-6);
@@ -554,6 +555,7 @@ portfolio
   border: 0.5px solid transparent;
   box-shadow: var(--light-shadow);
   width: fit-content;
+  word-wrap: break-all;
 }
 .port h3 {
   color: var(--clr-grey-4);
@@ -585,7 +587,7 @@ portfolio
 }
 .port .commentarys .commentary {
   width: 100vw;
-  word-wrap: break-word;
+  word-wrap: break-all;
   padding: 2rem;
 }
 .port .commentarys .commentary:hover {
@@ -701,6 +703,7 @@ portfolio
   border: 0.5px solid transparent;
   box-shadow: var(--light-shadow);
   width: fit-content;
+  word-wrap: break-all;
 }
 .learns h4:hover {
   background-color: var(--clr-grey-9);
@@ -743,6 +746,7 @@ portfolio
 .learn-container {
   padding: 1rem;
   width: fit-content;
+  width: 80%;
 }
 .learn-container:hover {
   background-color: blanchedalmond;
@@ -755,6 +759,7 @@ portfolio
   color: rgb(149, 66, 98);
   margin-top: 2rem;
   margin-bottom: 0.5rem;
+  word-wrap: break-all;
 }
 .learn img {
   display: block;
@@ -785,7 +790,7 @@ portfolio
   background-color: blanchedalmond;
   border: 2px dashed var(--clr-grey-5);
   border-radius: 4px;
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
   margin-bottom: 1rem;
 }
@@ -802,6 +807,7 @@ portfolio
   background-color: var(--clr-grey-4);
   box-shadow: none;
   color: white;
+  word-wrap: break-all;
 }
 
 .learn-container-title {
@@ -820,6 +826,7 @@ portfolio
 .question {
   display: grid;
   grid-template-columns: repeat(auto-fill, 300px);
+  justify-content: center;
 }
 
 .dropleft {
@@ -859,6 +866,7 @@ portfolio
 .link_contect h4 {
   margin-right: 1rem;
   font-size: 0.5rem;
+  word-wrap: break-all;
   background-color: rgb(145, 48, 29);
 }
 .link_contect h4:hover {
