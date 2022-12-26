@@ -1157,4 +1157,50 @@ timeline
   .timeline-cotainer {
     width: 95%;
   }
-}/*# sourceMappingURL=Project_66.css.map */
+}
+/*
+=======================
+computer
+=======================
+*/
+.computer {
+  position: absolute;
+  left: 0;
+  top: 80px;
+}
+.computer h3 {
+  color: rgb(145, 48, 29);
+  height: fit-content;
+  margin-top: 0;
+}
+
+.computer-container {
+  display: flex;
+  flex-direction: column;
+}
+.computer-container .computer-question {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+}
+.computer-container .computer-answer {
+  display: none;
+}
+.computer-container .computer-answer p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  color: var(--clr-grey-5);
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+.computer-container:hover .computer-answer {
+  display: block;
+}
+.computer-container:hover .answer {
+  background-color: rgb(201, 201, 174);
+}
+
+/*# sourceMappingURL=Project_66.css.map */

@@ -1193,3 +1193,56 @@ timeline
         width: 95%;
     }
 }
+
+
+/*
+=======================
+computer
+=======================
+*/
+
+.computer{
+    position: absolute;
+
+    left: 0;
+    top: 80px;
+
+    h3{
+        color: rgb(145, 48, 29);;
+        height: fit-content;
+        margin-top: 0;
+    }
+}
+
+.computer-container{
+    display: flex;
+    flex-direction: column;
+    .computer-question{
+        margin-top: 1rem;
+        display: flex;
+        gap: 0.5rem;
+        position: relative;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .computer-answer{
+        display: none;
+        p{
+            font-size: 1rem;
+            margin: 0.5rem 0;
+            color: var(--clr-grey-5);
+            font-weight: bold;
+            letter-spacing: 0.1rem;
+        }
+    }
+
+    &:hover{
+        .computer-answer{
+            display: block;
+        }
+        .answer{
+            background-color: rgb(201, 201, 174);
+        }
+    }
+}

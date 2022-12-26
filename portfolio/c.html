@@ -1,123 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/Project_66.css">
     <title>Document</title>
 </head>
+
 <body>
 
-        <!-- navbar -->
-        <nav class="nav" id="nav">
-            <div class="nav-center">
-                <!-- nav header -->
-                <div class="nav-header">
-                    <img src="../img/logo.png" alt="" class="nav-logo">
-                </div>
-                <!-- nav links -->
-                <ul class="nav-links">
-                    <li>
-                        <a href="../index.html">首頁</a>
-                        <div class="underline"></div>
-                    </li>
-                    <li class="drop-list">
+    <!-- navbar -->
+    <nav class="nav" id="nav">
+        <div class="nav-center">
+            <!-- nav header -->
+            <div class="nav-header">
+                <img src="../img/logo.png" alt="" class="nav-logo">
+            </div>
+            <!-- nav links -->
+            <ul class="nav-links">
+                <li>
+                    <a href="../index.html">首頁</a>
+                    <div class="underline"></div>
+                </li>
+                <li class="drop-list">
+                    <a href="">課堂實作</a>
+                    <i class="fa-sharp fa-solid fa-angle-down icon"></i>
+                    <div class="underline"></div>
+                    <div class="nav-form">
+                        <a href="#" onclick="demo_c(1)">Card</a>
+                        <a href="#" onclick="demo_c(2)">Blog</a>
+                        <a href="#" onclick="demo_c(3)">Mutipage</a>
+                        <a href="#" onclick="demo_c(4)">Resume</a>
+                    </div>
+                </li>
+                <li class="drop-list">
+                    <a href="#">作品集</a>
+                    <i class="fa-sharp fa-solid fa-angle-down icon"></i>
+                    <div class="underline"></div>
+                    <div class="nav-form">
+                        <a href="./c.html" class="current">計算機程式語言</a>
+                        <a href="./computer.html">計算機概論</a>
+                        <a href="">開源軟體實務</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="../resume/resume.html">履歷表</a>
+                    <div class="underline"></div>
+                </li>
+                <li>
+                    <a href="../final/Learn_66.html">期末專題</a>
+                    <div class="underline"></div>
+                </li>
+            </ul>
+            <button class="nav-btn" id="nav-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <button class="close-btn" id="close-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+
+
+    <!-- sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div>
+            <ul class="sidebar-links">
+                <li>
+                    <div class="sidebar-link"><a href="../index.html">首頁</a></div>
+                    <div class="underline"></div>
+                </li>
+                <li>
+                    <div class="sidebar-link">
                         <a href="">課堂實作</a>
-                        <i class="fa-sharp fa-solid fa-angle-down icon"></i>
-                        <div class="underline"></div>
-                        <div class="nav-form">
-                            <a href="#" onclick="demo_c(1)">Card</a>
-                            <a href="#" onclick="demo_c(2)">Blog</a>
-                            <a href="#" onclick="demo_c(3)">Mutipage</a>
-                            <a href="#" onclick="demo_c(4)">Resume</a>
-                        </div>
-                    </li>
-                    <li class="drop-list">
-                        <a href="#">作品集</a>
-                        <i class="fa-sharp fa-solid fa-angle-down icon"></i>
-                        <div class="underline"></div>
-                        <div class="nav-form">
-                            <a href="./c.html" class="current">計算機程式語言</a>
-                            <a href="">計算機概論</a>
-                            <a href="">開源軟體實務</a>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="../resume/resume.html">履歷表</a>
-                        <div class="underline"></div>
-                    </li>
-                    <li>
-                        <a href="../final/Learn_66.html">期末專題</a>
-                        <div class="underline"></div>
-                    </li>
-                </ul>
-                <button class="nav-btn" id="nav-btn">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <button class="close-btn" id="close-btn">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
-        </nav>
-        <!-- end of navbar -->
-    
-    
-        <!-- sidebar -->
-        <aside class="sidebar" id="sidebar">
-            <div>
-                <ul class="sidebar-links">
-                    <li>
-                        <div class="sidebar-link"><a href="../index.html">首頁</a></div>
-                        <div class="underline"></div>
-                    </li>
-                    <li>
-                        <div class="sidebar-link">
-                            <a href="">課堂實作</a>
-                            <i class="fa-solid fa-plus"></i>
-                        </div>
-                        <div class="underline"></div>
-                    </li>
-                    <li>
-                        <div class="sidebar-link">
-                            <a href="">作品集  </a>
-                            <i class="fa-solid fa-plus"></i>
-                        </div>
-                        
-                        <div class="underline"></div>
-                        
-                    </li>
-                    <li>
-                        <div class="sidebar-link"><a href="../resume/resume.html">履歷表</a></div>
-                        
-                        <div class="underline"></div>
-                    </li>
-                    <li>
-                        <div class="sidebar-link"><a href="../final/Learn_66.html">期末專題</a></div>
-                        
-                        <div class="underline"></div>
-                    </li>
-                </ul>
-            </div>
-            
-        </aside>
-        <!-- end of sidebar -->
-    
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="underline"></div>
+                </li>
+                <li>
+                    <div class="sidebar-link">
+                        <a href="">作品集 </a>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+
+                    <div class="underline"></div>
+
+                </li>
+                <li>
+                    <div class="sidebar-link"><a href="../resume/resume.html">履歷表</a></div>
+
+                    <div class="underline"></div>
+                </li>
+                <li>
+                    <div class="sidebar-link"><a href="../final/Learn_66.html">期末專題</a></div>
+
+                    <div class="underline"></div>
+                </li>
+            </ul>
+        </div>
+
+    </aside>
+    <!-- end of sidebar -->
+
     <!-- portfolio -->
     <section class="portfolio_c content-section" id="portfolio_c">
         <header>
             <h2>計算機程式語言</h2>
         </header>
         <div class="underline"></div>
-        
-        
+
+
         <div class="portfolio_c-container">
             <div class="portfolio_c-option">
                 <article class="c_button" onclick="change(1)">
@@ -153,8 +151,8 @@
             </div>
             <div class="portfolio_c-center" id="c_center"></div>
         </div>
-        
-            
+
+
     </section>
     <!-- end portfolio -->
 
@@ -164,13 +162,16 @@
     <!-- contact -->
     <section class="contact">
         <a href="https://line.me/ti/p/fv1heHFz2u" target="_blank"><i class="fa-brands fa-line"></i></a>
-        <a href="https://www.facebook.com/profile.php?id=100007905312982&mibextid=LQQJ4d" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://instagram.com/twns570010?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100007905312982&mibextid=LQQJ4d" target="_blank"><i
+                class="fa-brands fa-facebook"></i></a>
+        <a href="https://instagram.com/twns570010?igshid=YmMyMTA2M2Y=" target="_blank"><i
+                class="fa-brands fa-square-instagram"></i></a>
         <a href="211410666@o365.tku.edu.tw" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-        
+
     </section>
     <!-- contact end -->
     <script src="../js/66.js"></script>
     <script src="../js/link.js"></script>
 </body>
+
 </html>
