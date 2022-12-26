@@ -151,7 +151,7 @@ nav
 .nav-btn {
   display: none;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1300px) {
   .nav {
     height: 60px;
   }
@@ -363,7 +363,7 @@ portfolio
   grid-template-columns: repeat(auto-fill, 150px);
   gap: 2rem;
   margin: 0 auto;
-  width: 100vw;
+  width: 90vw;
 }
 .portfolio_c h4 {
   color: var(--clr-grey-5);
@@ -445,7 +445,7 @@ portfolio
     height: fit-content;
   }
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1300) {
   .portfolio_c h2 {
     font-size: 2rem;
   }
@@ -594,8 +594,7 @@ portfolio
   color: rgb(212, 137, 102);
 }
 .port .commentarys .commentary {
-  width: 100vw;
-  word-wrap: break-all;
+  width: 60vw;
   padding: 2rem;
 }
 .port .commentarys .commentary:hover {
@@ -611,13 +610,14 @@ portfolio
   display: grid;
   grid-template-columns: max-content max-content;
   place-items: center;
+  width: 60vw;
 }
 .port .c_header p {
   padding-left: 2rem;
   font-size: 1.2rem;
   font-weight: bold;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1300) {
   .port img {
     max-width: 200px;
   }
@@ -727,7 +727,7 @@ portfolio
   letter-spacing: 0.15rem;
   padding-left: 1rem;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1300) {
   .learns {
     top: 60px;
   }
@@ -968,7 +968,7 @@ resume
   margin-bottom: 1rem;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1300px) {
   .resume {
     top: 60px;
   }
@@ -1104,7 +1104,7 @@ timeline
   border-bottom-left-radius: 0;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1300px) {
   .timeline {
     display: block;
   }
@@ -1201,6 +1201,58 @@ computer
 }
 .computer-container:hover .answer {
   background-color: rgb(201, 201, 174);
+}
+
+.linux {
+  position: absolute;
+  left: 0;
+  top: 40px;
+}
+.linux-lr {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.linux header h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  opacity: 0.7;
+}
+.linux h3 {
+  color: rgb(145, 48, 29);
+  height: fit-content;
+  margin-top: 0;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+}
+.linux-container {
+  margin-top: 2rem;
+}
+.linux-question {
+  display: flex;
+  gap: 1rem;
+  width: fit-content;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border: 2px dotted transparent;
+  border-radius: 5px;
+  transition: var(--transition);
+}
+.linux-question h3 {
+  font-size: 1.2rem;
+  color: var(--clr-grey-5);
+  letter-spacing: 0.2rem;
+}
+.linux-question .answer {
+  opacity: 0;
+  transition: var(--transition);
+}
+.linux-question:hover {
+  border-color: rgb(96, 96, 188);
+  background-color: rgb(239, 234, 221);
+}
+.linux-question:hover .answer {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=Project_66.css.map */
