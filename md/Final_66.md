@@ -1,3 +1,12 @@
+### Final Project Github repo url
+
+[My Github url](https://github.com/211410666/211410666)
+
+### Final Project Vercel url
+
+[My Vercel url](https://211410666.vercel.app/)
+
+
 ### Design a nav (include logo,link,icons)
 
 ![](1.png)

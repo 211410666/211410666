@@ -1,3 +1,11 @@
+### Github repo url
+
+[My Github url](https://github.com/211410666/1111-sweb-1N-demo-211410666)
+
+### My Vercel 
+
+[My Vercel url](https://1111-sweb-1-n-demo-211410666-nizt.vercel.app/)
+
 ### W11 Git Log (scss)
 
 ![](w11.png)
