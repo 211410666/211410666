@@ -1167,6 +1167,7 @@ computer
   position: absolute;
   left: 0;
   top: 80px;
+  margin-bottom: 5rem;
 }
 .computer h3 {
   color: rgb(145, 48, 29);
@@ -1201,6 +1202,9 @@ computer
   display: flex;
   flex-direction: column;
   margin-top: 0.5rem;
+}
+.computer-container .computer-option h3 {
+  color: rgb(184, 100, 84);
 }
 .computer-container .computer-answer {
   margin-left: 2rem;
@@ -1271,10 +1275,4 @@ computer
 }
 .linux-question:hover .answer {
   opacity: 1;
-}
-
-.s {
-  height: 30px;
-}
-
-/*# sourceMappingURL=Project_66.css.map */
+}/*# sourceMappingURL=Project_66.css.map */
