@@ -1203,10 +1203,8 @@ computer
 
 .computer{
     position: absolute;
-
     left: 0;
     top: 80px;
-
     h3{
         color: rgb(145, 48, 29);;
         height: fit-content;
@@ -1215,20 +1213,41 @@ computer
 }
 
 .computer-container{
-    display: flex;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    'a b'
+    'c b';
     flex-direction: column;
+    margin-top: 1rem;
+    width: 80vw;
+    border: 1px solid var(--clr-grey-3);
+    border-radius: 10px;
+    padding: 1rem;
     .computer-question{
+        grid-area: a;
         margin-top: 1rem;
         display: flex;
+        flex-direction: column;
         gap: 0.5rem;
         position: relative;
         width: fit-content;
         height: fit-content;
     }
+    .computer-option{
+        grid-area: c;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0.5rem;
+    }
 
     .computer-answer{
+        margin-left: 2rem;
         display: none;
+        grid-area: b;
         p{
+            
             font-size: 1rem;
             margin: 0.5rem 0;
             color: var(--clr-grey-5);
@@ -1301,4 +1320,8 @@ computer
             background-color: rgb(239, 234, 221);
         }
     }
+}
+
+.s{
+    height: 30px;
 }

@@ -1175,19 +1175,37 @@ computer
 }
 
 .computer-container {
-  display: flex;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "a b" "c b";
   flex-direction: column;
+  margin-top: 1rem;
+  width: 80vw;
+  border: 1px solid var(--clr-grey-3);
+  border-radius: 10px;
+  padding: 1rem;
 }
 .computer-container .computer-question {
+  grid-area: a;
   margin-top: 1rem;
   display: flex;
+  flex-direction: column;
   gap: 0.5rem;
   position: relative;
   width: fit-content;
   height: fit-content;
 }
+.computer-container .computer-option {
+  grid-area: c;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+}
 .computer-container .computer-answer {
+  margin-left: 2rem;
   display: none;
+  grid-area: b;
 }
 .computer-container .computer-answer p {
   font-size: 1rem;
@@ -1253,6 +1271,10 @@ computer
 }
 .linux-question:hover .answer {
   opacity: 1;
+}
+
+.s {
+  height: 30px;
 }
 
 /*# sourceMappingURL=Project_66.css.map */
