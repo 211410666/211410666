@@ -1206,11 +1206,10 @@ computer
     left: 0;
     top: 80px;
     h3{
-        color: rgb(145, 48, 29);
+        color: rgb(145, 48, 29);;
         height: fit-content;
         margin-top: 0;
     }
-    margin-bottom: 5rem;
 }
 
 .computer-container{
@@ -1235,24 +1234,18 @@ computer
         position: relative;
         width: fit-content;
         height: fit-content;
-        
-        
     }
     .computer-option{
         grid-area: c;
         display: flex;
         flex-direction: column;
         margin-top: 0.5rem;
-        h3{
-            color: rgb(184, 100, 84);
-        }
     }
 
     .computer-answer{
         margin-left: 2rem;
         display: none;
         grid-area: b;
-        
         p{
             
             font-size: 1rem;
