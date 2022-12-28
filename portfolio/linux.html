@@ -118,7 +118,7 @@
         
 
         <div class="linux-lr">
-            <div class="linux-container">
+            <div class="linux-container" id="terminal">
                 <section class="linux-title">
                     <h3>終端機操作指令</h3>
                 </section>
@@ -143,7 +143,7 @@
                     <h3 class="answer">Ctrl+U</h3>
                 </section>
             </div>
-            <div class="linux-container">
+            <div class="linux-container" id="environment">
                 <section class="linux-title">
                     <h3>教室環境</h3>
                 </section>
@@ -168,7 +168,7 @@
                     <h3 class="answer">163.13.128.179</h3>
                 </section>
             </div>
-            <div class="linux-container">
+            <div class="linux-container" id="internet">
                 <section class="linux-title">
                     <h3>網路設定流程</h3>
                 </section>
@@ -194,7 +194,7 @@
                     <h3 class="answer">or 8.8.8.8</h3>
                 </section>
             </div>
-            <div class="linux-container">
+            <div class="linux-container" id="Preface">
                 <section class="linux-title">
                     <h3>Preface</h3>
                 </section>
@@ -223,7 +223,7 @@
                     <h3 class="answer">sudo apt install [package] 安裝指定套件</h3>
                 </section>
             </div>
-            <div class="linux-container">
+            <div class="linux-container" id="sys_command">
                 <section class="linux-title">
                     <h3>Chapter 1&2 System command</h3>
                 </section>
@@ -253,7 +253,7 @@
                     <h3 class="answer">uname [option] -a -v</h3>
                 </section>
             </div>
-            <div class="linux-container">
+            <div class="linux-container" id="file_command">
                 <section class="linux-title">
                     <h3>Chapter 3 File/Directory command</h3>
                 </section>
@@ -316,7 +316,7 @@
                     <h3 class="answer">zip s.txt s.txt.zip 壓縮</h3>
                 </section>
             </div>
-            <div class="linux-container">
+            <div class="linux-container" id="fhs">
                 <section class="linux-title">
                     <h3>FHS 檔案系統說明</h3>
                 </section>
@@ -357,7 +357,7 @@
                     <h3 class="answer">放置系統指令,通常需要較高權限才可使用</h3>
                 </section>
             </div>
-            <div class="linux-container">
+            <div class="linux-container" id="permissions">
                 <section class="linux-title">
                     <h3>權限</h3>
                 </section>
@@ -427,7 +427,7 @@
                     <h3 class="answer">zip s.txt s.txt.zip 壓縮</h3>
                 </section>
             </div>
-            <div class="linux-container">
+            <div class="linux-container" id="editor">
                 <section class="linux-title">
                     <h3>文字編輯器</h3>
                 </section>
@@ -473,43 +473,19 @@
                     <h3 class="answer">[^] [!] 兩種都是反選取,如[!1-7]就是排除1~7 [^1-37-9]就是只要456</h3>
                 </section>
                 <section class="linux-question" style="display: block;">
+                    <h3>尋找指令</h3>
+                    <h3 class="answer">find [path] -name [filestring] -print</h3>
+                    <h3 class="answer">這個指令跟ls不同的地方在於 他會從你給予的目錄底下搜索,且任何子目錄都搜索,並把搜尋條件所有的檔案所在的路徑+檔名都印出來,這時候搭配萬用字元非常好用</h3>
+                </section>
+                <section class="linux-question" style="display: block;">
                     <h3>資料重新導向</h3>
-                    <h3 class="answer">0&lt;和&lt; 標準輸入檔 把案內容,當作指令的輸入值</h3>
-                    <h3 class="answer">cp a b 把a檔案複製,並創建一個b檔案 內容和a相同</h3>
-                    <h3 class="answer">cp a.sh ../b.sh 把a.sh檔案複製,並在上層目錄創建一個b.sh檔案,內容和a.sh相同</h3>
-                    <h3 class="answer">cp a.sh /temp/b.sh 把a.sh檔案複製,並在根目錄的temp資料夾創建一個b.sh檔案,內容和a.sh相同</h3>
-                </section>
-                <section class="linux-question" style="display: block;">
-                    <h3>移動檔案與重新命名</h3>
-                    <h3 class="answer">mv [option] [filename] [dir_name]</h3>
-                    <h3 class="answer">mv a.txt ~ 把a.txt移動到家目錄</h3>
-                    <h3 class="answer">mv a.txt b.txt 把a.txt重新命名為b.txt</h3>
-                </section>
-                <section class="linux-question">
-                    <h3>印出檔案內容</h3>
-                    <h3 class="answer">cat [option] [file]</h3>
-                </section>
-                <section class="linux-question" style="display: block;">
-                    <h3>檔案壓縮</h3>
-                    <h3 class="answer">[gzip/bzip2/xz] [option] [filename]</h3>
-                    <h3 class="answer">[option] -k保留原始檔案 -d解壓縮 -v顯示資訊 -c壓縮的資料顯示在螢幕上</h3>
-                    <h3 class="answer">簡單記: 壓縮就用-kv 解壓縮就用-dv</h3>
-                    <h3 class="answer">gzip -kv s.txt 壓縮且保留檔案並顯示資訊</h3>
-                    <h3 class="answer">gzip -dv s.txt.gz 解壓縮並顯示資訊</h3>
-                    <h3 class="answer">zip的處理方式根上面三種稍有不同</h3>
-                    <h3 class="answer">unzip s.txt.zip 解壓縮</h3>
-                    <h3 class="answer">zip s.txt s.txt.zip 壓縮</h3>
-                </section>
-                <section class="linux-question" style="display: block;">
-                    <h3>打包檔案</h3>
-                    <h3 class="answer">tar [tar_name] [files/directory]</h3>
-                    <h3 class="answer">這邊不要背太多,只要記住通常打包和壓縮都是一體的,下面的指令也是包含在一起</h3>
-                    <h3 class="answer">tar -acv -f [filename.tar.gz] file1 file2 file3 打包並壓縮1~3的檔案</h3>
-                    <h3 class="answer">其中-a可以通用所有的壓縮格式, -c為打包壓縮指令 -v顯示資訊</h3>
-                    <h3 class="answer">tar -atv -f [filename.tar.gz] 查看打包檔案</h3>
-                    <h3 class="answer">tar -axv -f [filename.tar.gz] -C [path] 解打包檔案 路徑若不設定則為當前目錄</h3>
-                    <h3 class="answer">unzip s.txt.zip 解壓縮</h3>
-                    <h3 class="answer">zip s.txt s.txt.zip 壓縮</h3>
+                    <h3 class="answer">&gt;和&gt;&gt; 輸出重新導向, 將指令本來應該要輸出到螢幕上的東西,輸出到檔案或是其他指定的地方</h3>
+                    <h3 class="answer">&lt;和&lt;&lt; 輸入重新導向, 觀念其實不好理解,因為目前所學能應用到符合邏輯的方法幾乎沒有,但是下面這個例子可以稍微幫助理解</h3>
+                    <h3 class="answer">wc &gt; goo.txt &lt; foo.txt  把foo.txt這個檔案 當作 wc 的輸入,並把回傳的結果,存到goo.txt裡面</h3>
+                    <h3 class="answer">wc &lt; goo.txt &gt; foo.txt  把goo.txt當作wc的輸入,並把結果輸出到foo.txt上</h3>
+                    <h3 class="answer">然後兩個連續兩個大於就是把結果直接輸出到檔案原本內容的後面,如果只有一個符號,則會覆蓋原本的結果 &lt;&lt; 為結束輸入</h3>
+                    <h3 class="answer">最後 &這個符號,可以改變標準輸出和標準錯誤輸出的資料流, 例如echo "123" 這我們知道他一定是正確的 所以螢幕會印出123</h3>
+                    <h3 class="answer">所以我們在寫echo "123" 2>1.txt 的時候 1.txt不會有錯誤內容,因為她是對的 那我們改寫成 echo "123" 2>1.txt 1>&2 就是把標準輸出當作錯誤的,這樣前面2>1.txt 裡面就會有123</h3>
                 </section>
             </div>
             
