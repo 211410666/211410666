@@ -168,6 +168,350 @@
                     <h3 class="answer">163.13.128.179</h3>
                 </section>
             </div>
+            <div class="linux-container">
+                <section class="linux-title">
+                    <h3>網路設定流程</h3>
+                </section>
+                <section class="linux-question">
+                    <h3>IPv4位置:</h3>
+                    <h3 class="answer">手動</h3>
+                </section>
+                <section class="linux-question">
+                    <h3>Address:</h3>
+                    <h3 class="answer">163.13.126.1xx</h3>
+                </section>
+                <section class="linux-question">
+                    <h3>Netmask:</h3>
+                    <h3 class="answer">255.255.255.0</h3>
+                </section>
+                <section class="linux-question">
+                    <h3>Gateway:</h3>
+                    <h3 class="answer">163.13.129.254</h3>
+                </section>
+                <section class="linux-question">
+                    <h3>DNS Sever:</h3>
+                    <h3 class="answer">163.13.1.60</h3>
+                    <h3 class="answer">or 8.8.8.8</h3>
+                </section>
+            </div>
+            <div class="linux-container">
+                <section class="linux-title">
+                    <h3>Preface</h3>
+                </section>
+                <section class="linux-question">
+                    <h3>sudo [command]</h3>
+                    <h3 class="answer">使指令取得超級管理員的權限,如 sudo apt</h3>
+                </section>
+                <section class="linux-question">
+                    <h3>新增使用者</h3>
+                    <h3 class="answer">adduser --home /home/user_name user_name</h3>
+                </section>
+                <section class="linux-question">
+                    <h3>網路測試</h3>
+                    <h3 class="answer">ping -c 2 163.13.126.1xx [範例為ping自己 -c後的變數為ping幾次]</h3>
+                </section>
+                <section class="linux-question" style="display: block;">
+                    <h3>關機</h3>
+                    <h3 class="answer">shutdown [option] [time] [message]</h3>
+                    <h3 class="answer">[option]: -r重新開機 -h立即關機</h3>
+                    <h3 class="answer">[time]: 可以打時間如19:00 也可以打30(默認單位為分鐘)</h3>
+                </section>
+                <section class="linux-question" style="display: block;">
+                    <h3>更新套件</h3>
+                    <h3 class="answer">sudo apt update 顯示所有可更新套件清單</h3>
+                    <h3 class="answer">sudo apt upgrade 升級清單中所有套件[建議在使用時 sudo apt upgrade -y(全部同意)]</h3>
+                    <h3 class="answer">sudo apt install [package] 安裝指定套件</h3>
+                </section>
+            </div>
+            <div class="linux-container">
+                <section class="linux-title">
+                    <h3>Chapter 1&2 System command</h3>
+                </section>
+                <section class="linux-question">
+                    <h3>顯示系統當前使用者</h3>
+                    <h3 class="answer">who [option]</h3>
+                </section>
+                <section class="linux-question" style="display: block;">
+                    <h3>查閱指令的線上手冊</h3>
+                    <h3 class="answer">man [option] [command]</h3>
+                    <h3 class="answer">-k在所有的線上手冊中以關鍵字搜尋</h3>
+                </section>
+                <section class="linux-question">
+                    <h3>輸出</h3>
+                    <h3 class="answer">echo [option] [var or stirng]</h3>
+                </section>
+                <section class="linux-question" style="display: block;">
+                    <h3>更改密碼</h3>
+                    <h3 class="answer">passwd 什麼都不加 就是一般使用者更改自己的密碼</h3>
+                    <h3 class="answer">流程為 1)正在變更user_name的密碼 2)目前密碼 3)新密碼 4)再次輸入新密碼 5)成功訊息</h3>
+                    <h3 class="answer">sudo passwd [username] 若今天超級管理員要更改其他使用者密碼則需輸入要更改的id 且流程不同</h3>
+                    <h3 class="answer">流程為 1)輸入新密碼 2)再次輸入新密碼 3)成功訊息</h3>
+                    <h3 class="answer">同理 passwd -S 查看自己密碼資訊 sudo passwd -S [username] 查看其他人的密碼資訊</h3>
+                </section>
+                <section class="linux-question" style="display: block;">
+                    <h3>顯示系統資訊</h3>
+                    <h3 class="answer">uname [option] -a -v</h3>
+                </section>
+            </div>
+            <div class="linux-container">
+                <section class="linux-title">
+                    <h3>Chapter 3 File/Directory command</h3>
+                </section>
+                <section class="linux-question">
+                    <h3>顯示當前路徑</h3>
+                    <h3 class="answer">pwd</h3>
+                </section>
+                <section class="linux-question" style="display: block;">
+                    <h3>切換目錄</h3>
+                    <h3 class="answer">cd [path]</h3>
+                    <h3 class="answer">cd  cd ~  cd - 回到家目錄</h3>
+                    <h3 class="answer">cd / 到根目錄</h3>
+                    <h3 class="answer">cd .. 回到上層目錄</h3>
+                </section>
+                <section class="linux-question">
+                    <h3>新建目錄</h3>
+                    <h3 class="answer">mkdir [dir_name]</h3>
+                </section>
+                <section class="linux-question">
+                    <h3>刪除目錄</h3>
+                    <h3 class="answer">rmdir [dir_name] (注意目錄必須為空目錄)</h3>
+                </section>
+                <section class="linux-question" style="display: block;">
+                    <h3>複製檔案或目錄</h3>
+                    <h3 class="answer">cp [option] [filename] [newfilename]</h3>
+                    <h3 class="answer">cp a b 把a檔案複製,並創建一個b檔案 內容和a相同</h3>
+                    <h3 class="answer">cp a.sh ../b.sh 把a.sh檔案複製,並在上層目錄創建一個b.sh檔案,內容和a.sh相同</h3>
+                    <h3 class="answer">cp a.sh /temp/b.sh 把a.sh檔案複製,並在根目錄的temp資料夾創建一個b.sh檔案,內容和a.sh相同</h3>
+                </section>
+                <section class="linux-question" style="display: block;">
+                    <h3>移動檔案與重新命名</h3>
+                    <h3 class="answer">mv [option] [filename] [dir_name]</h3>
+                    <h3 class="answer">mv a.txt ~ 把a.txt移動到家目錄</h3>
+                    <h3 class="answer">mv a.txt b.txt 把a.txt重新命名為b.txt</h3>
+                </section>
+                <section class="linux-question">
+                    <h3>印出檔案內容</h3>
+                    <h3 class="answer">cat [option] [file]</h3>
+                </section>
+                <section class="linux-question" style="display: block;">
+                    <h3>檔案壓縮</h3>
+                    <h3 class="answer">[gzip/bzip2/xz] [option] [filename]</h3>
+                    <h3 class="answer">[option] -k保留原始檔案 -d解壓縮 -v顯示資訊 -c壓縮的資料顯示在螢幕上</h3>
+                    <h3 class="answer">簡單記: 壓縮就用-kv 解壓縮就用-dv</h3>
+                    <h3 class="answer">gzip -kv s.txt 壓縮且保留檔案並顯示資訊</h3>
+                    <h3 class="answer">gzip -dv s.txt.gz 解壓縮並顯示資訊</h3>
+                    <h3 class="answer">zip的處理方式根上面三種稍有不同</h3>
+                    <h3 class="answer">unzip s.txt.zip 解壓縮</h3>
+                    <h3 class="answer">zip s.txt s.txt.zip 壓縮</h3>
+                </section>
+                <section class="linux-question" style="display: block;">
+                    <h3>打包檔案</h3>
+                    <h3 class="answer">tar [tar_name] [files/directory]</h3>
+                    <h3 class="answer">這邊不要背太多,只要記住通常打包和壓縮都是一體的,下面的指令也是包含在一起</h3>
+                    <h3 class="answer">tar -acv -f [filename.tar.gz] file1 file2 file3 打包並壓縮1~3的檔案</h3>
+                    <h3 class="answer">其中-a可以通用所有的壓縮格式, -c為打包壓縮指令 -v顯示資訊</h3>
+                    <h3 class="answer">tar -atv -f [filename.tar.gz] 查看打包檔案</h3>
+                    <h3 class="answer">tar -axv -f [filename.tar.gz] -C [path] 解打包檔案 路徑若不設定則為當前目錄</h3>
+                    <h3 class="answer">unzip s.txt.zip 解壓縮</h3>
+                    <h3 class="answer">zip s.txt s.txt.zip 壓縮</h3>
+                </section>
+            </div>
+            <div class="linux-container">
+                <section class="linux-title">
+                    <h3>FHS 檔案系統說明</h3>
+                </section>
+                <section class="linux-question">
+                    <h3>/</h3>
+                    <h3 class="answer">根目錄</h3>
+                </section>
+                <section class="linux-question">
+                    <h3>/etc</h3>
+                    <h3 class="answer">系統設定檔,如人員帳號密碼,起始檔</h3>
+                </section>
+                <section class="linux-question">
+                    <h3>/home</h3>
+                    <h3 class="answer">使用者的家目錄</h3>
+                </section>
+                <section class="linux-question">
+                    <h3>/root</h3>
+                    <h3 class="answer">系統管理員的家目錄</h3>
+                </section>
+                <section class="linux-question">
+                    <h3>/boot</h3>
+                    <h3 class="answer">Linux開機檔的目錄</h3>
+                </section>
+                <section class="linux-question">
+                    <h3>/bin</h3>
+                    <h3 class="answer">放置一般會使用到的指令,如ls cd who man cat mr mkdir等</h3>
+                </section>
+                <section class="linux-question">
+                    <h3>/dev</h3>
+                    <h3 class="answer">放置設備檔</h3>
+                </section>
+                <section class="linux-question">
+                    <h3>lib</h3>
+                    <h3 class="answer">函式庫</h3>
+                </section>
+                <section class="linux-question">
+                    <h3>sbin</h3>
+                    <h3 class="answer">放置系統指令,通常需要較高權限才可使用</h3>
+                </section>
+            </div>
+            <div class="linux-container">
+                <section class="linux-title">
+                    <h3>權限</h3>
+                </section>
+                <section class="linux-question" style="display: block;">
+                    <h3>顯示目錄內所有檔案</h3>
+                    <h3 class="answer">ls [opiton] [path]</h3>
+                    <h3 class="answer">-a 顯示所有檔案包含隱藏檔</h3>
+                    <h3 class="answer">-l 顯示所有檔案的詳細資訊</h3>
+                    <h3 class="answer">檔案權限表示法: -rwxrwxrw- 第一個-代表檔案類型 d則為資料夾 然後後面每三碼分別代表user group other的權限,若顯示-則代表沒有該權限</h3>
+                </section>
+                <section class="linux-question" style="display: block;">
+                    <h3>更改檔案權限</h3>
+                    <h3 class="answer">chmod [number/symbol] [option] [filename/directory] </h3>
+                    <h3 class="answer">number 表示法 以3個8進位數字代表權限 000~777 r=4 w=2 x=1 三個相加等於該位置權限</h3>
+                    <h3 class="answer">3個八進位數字分別代表user group other</h3>
+                    <h3 class="answer">chmod 664 file 權限更改成-rw-rw-r--</h3>
+                    <h3 class="answer">symbol 表示法 以augo代表要更改的對象 然後用運算符號更改權限</h3>
+                    <h3 class="answer">chmod a+r file 全部人加上r的權限</h3>
+                    <h3 class="answer">chmod u=rwx,go=rx file user有全部權限 group other只有rx權限</h3>
+                    <h3 class="answer">chmod -R g=rx,o-w dir_name group對於資料夾有rx權限 group刪除w權限</h3>
+                </section>
+                <section class="linux-question">
+                    <h3>權限遮罩</h3>
+                    <h3 class="answer">umask [number] 這邊只要記住一個觀念,umask就是建立一個新檔案時的權限遮罩,當使用者創立一個檔案時權限=666-umask 資料夾為777-umask 只是必須要換成符號表示法再計算才不會出錯</h3>
+                </section>
+                <section class="linux-question">
+                    <h3>刪除目錄</h3>
+                    <h3 class="answer">rmdir [dir_name] (注意目錄必須為空目錄)</h3>
+                </section>
+                <section class="linux-question" style="display: block;">
+                    <h3>複製檔案或目錄</h3>
+                    <h3 class="answer">cp [option] [filename] [newfilename]</h3>
+                    <h3 class="answer">cp a b 把a檔案複製,並創建一個b檔案 內容和a相同</h3>
+                    <h3 class="answer">cp a.sh ../b.sh 把a.sh檔案複製,並在上層目錄創建一個b.sh檔案,內容和a.sh相同</h3>
+                    <h3 class="answer">cp a.sh /temp/b.sh 把a.sh檔案複製,並在根目錄的temp資料夾創建一個b.sh檔案,內容和a.sh相同</h3>
+                </section>
+                <section class="linux-question" style="display: block;">
+                    <h3>移動檔案與重新命名</h3>
+                    <h3 class="answer">mv [option] [filename] [dir_name]</h3>
+                    <h3 class="answer">mv a.txt ~ 把a.txt移動到家目錄</h3>
+                    <h3 class="answer">mv a.txt b.txt 把a.txt重新命名為b.txt</h3>
+                </section>
+                <section class="linux-question">
+                    <h3>印出檔案內容</h3>
+                    <h3 class="answer">cat [option] [file]</h3>
+                </section>
+                <section class="linux-question" style="display: block;">
+                    <h3>檔案壓縮</h3>
+                    <h3 class="answer">[gzip/bzip2/xz] [option] [filename]</h3>
+                    <h3 class="answer">[option] -k保留原始檔案 -d解壓縮 -v顯示資訊 -c壓縮的資料顯示在螢幕上</h3>
+                    <h3 class="answer">簡單記: 壓縮就用-kv 解壓縮就用-dv</h3>
+                    <h3 class="answer">gzip -kv s.txt 壓縮且保留檔案並顯示資訊</h3>
+                    <h3 class="answer">gzip -dv s.txt.gz 解壓縮並顯示資訊</h3>
+                    <h3 class="answer">zip的處理方式根上面三種稍有不同</h3>
+                    <h3 class="answer">unzip s.txt.zip 解壓縮</h3>
+                    <h3 class="answer">zip s.txt s.txt.zip 壓縮</h3>
+                </section>
+                <section class="linux-question" style="display: block;">
+                    <h3>打包檔案</h3>
+                    <h3 class="answer">tar [tar_name] [files/directory]</h3>
+                    <h3 class="answer">這邊不要背太多,只要記住通常打包和壓縮都是一體的,下面的指令也是包含在一起</h3>
+                    <h3 class="answer">tar -acv -f [filename.tar.gz] file1 file2 file3 打包並壓縮1~3的檔案</h3>
+                    <h3 class="answer">其中-a可以通用所有的壓縮格式, -c為打包壓縮指令 -v顯示資訊</h3>
+                    <h3 class="answer">tar -atv -f [filename.tar.gz] 查看打包檔案</h3>
+                    <h3 class="answer">tar -axv -f [filename.tar.gz] -C [path] 解打包檔案 路徑若不設定則為當前目錄</h3>
+                    <h3 class="answer">unzip s.txt.zip 解壓縮</h3>
+                    <h3 class="answer">zip s.txt s.txt.zip 壓縮</h3>
+                </section>
+            </div>
+            <div class="linux-container">
+                <section class="linux-title">
+                    <h3>文字編輯器</h3>
+                </section>
+                <section class="linux-question" style="display: block;">
+                    <h3>nano快捷鍵</h3>
+                    <h3 class="answer">Ctrl+S存檔</h3>
+                    <h3 class="answer">Ctrl+X離開</h3>
+                    <h3 class="answer">Ctrl+O另存新檔</h3>
+                </section>
+                <section class="linux-question" style="display: block;">
+                    <h3>vim快捷鍵</h3>
+                    <h3 class="answer">vim分為三個模式</h3>
+                    <h3 class="answer">一般模式:開啟檔案時進入,不能直接編輯文字,但可以複製刪除貼上</h3>
+                    <h3 class="answer">編輯模式:按i進入 此時才可以編輯文件</h3>
+                    <h3 class="answer">命命列模式:按:進入 輸入w可以寫入 q可以離開 wq!寫入後強制離開</h3>
+                </section>
+            </div>
+            <div class="linux-container">
+                <section class="linux-title">
+                    <h3>Bash shell</h3>
+                </section>
+                <section class="linux-question">
+                    <h3>shell路徑</h3>
+                    <h3 class="answer">輸入echo $SHELL可查看shell路徑</h3>
+                </section>
+                <section class="linux-question" style="display: block;">
+                    <h3>設定變數與字串概念</h3>
+                    <h3 class="answer">x=7 利用等號來設定變數</h3>
+                    <h3 class="answer">$x 利用$來取用變數</h3>
+                    <h3 class="answer">${x} 另外一種取用變數的方式</h3>
+                    <h3 class="answer">在shell中""包住的字串,仍然保有其特性(例如"$x" 會顯示7)</h3>
+                    <h3 class="answer">在shell中''包住的字串,失去其特性(例如'$x' 會顯示$x)</h3>
+                    <h3 class="answer">在雙引號中可以使用\來使單個特殊字元失去其特性(例如"\$" 會顯示$)</h3>
+                    <h3 class="answer">可以使用反單引號``或$小括號$()在雙引號包裹的字串中使用指令(例如 echo "i want `ls`或是 echo "i want $(ls)"")</h3>
+                    <h3 class="answer">unset x 可以取消變數</h3>
+                </section>
+                <section class="linux-question" style="display: block;">
+                    <h3>萬用字元</h3>
+                    <h3 class="answer">? 長度為1的任意字元 (例如ls ?.txt 可以顯示目錄下 檔名長度1且副檔名為txt的檔案)</h3>
+                    <h3 class="answer">* 長度任意的任意字元(包含沒有字元) (例如ls *.txt 可以顯示目錄下任意長度且副檔名為txt的檔案)</h3>
+                    <h3 class="answer">[] 字元的集合,該位置的這個字元只能是中括號裡面的字元(例如 ls *[1-3].txt 會顯示任意長度且結尾為1~3且副檔名為txt的檔案)</h3>
+                    <h3 class="answer">[] 的寫法可以是範圍 [1-7][a-p][A-H] / 也可以每個元素都寫 [13579] 這樣就只會有偶數 / 也可以寫成[1-37-9] 這樣就是排除456</h3>
+                    <h3 class="answer">[^] [!] 兩種都是反選取,如[!1-7]就是排除1~7 [^1-37-9]就是只要456</h3>
+                </section>
+                <section class="linux-question" style="display: block;">
+                    <h3>資料重新導向</h3>
+                    <h3 class="answer">0&lt;和&lt; 標準輸入檔 把案內容,當作指令的輸入值</h3>
+                    <h3 class="answer">cp a b 把a檔案複製,並創建一個b檔案 內容和a相同</h3>
+                    <h3 class="answer">cp a.sh ../b.sh 把a.sh檔案複製,並在上層目錄創建一個b.sh檔案,內容和a.sh相同</h3>
+                    <h3 class="answer">cp a.sh /temp/b.sh 把a.sh檔案複製,並在根目錄的temp資料夾創建一個b.sh檔案,內容和a.sh相同</h3>
+                </section>
+                <section class="linux-question" style="display: block;">
+                    <h3>移動檔案與重新命名</h3>
+                    <h3 class="answer">mv [option] [filename] [dir_name]</h3>
+                    <h3 class="answer">mv a.txt ~ 把a.txt移動到家目錄</h3>
+                    <h3 class="answer">mv a.txt b.txt 把a.txt重新命名為b.txt</h3>
+                </section>
+                <section class="linux-question">
+                    <h3>印出檔案內容</h3>
+                    <h3 class="answer">cat [option] [file]</h3>
+                </section>
+                <section class="linux-question" style="display: block;">
+                    <h3>檔案壓縮</h3>
+                    <h3 class="answer">[gzip/bzip2/xz] [option] [filename]</h3>
+                    <h3 class="answer">[option] -k保留原始檔案 -d解壓縮 -v顯示資訊 -c壓縮的資料顯示在螢幕上</h3>
+                    <h3 class="answer">簡單記: 壓縮就用-kv 解壓縮就用-dv</h3>
+                    <h3 class="answer">gzip -kv s.txt 壓縮且保留檔案並顯示資訊</h3>
+                    <h3 class="answer">gzip -dv s.txt.gz 解壓縮並顯示資訊</h3>
+                    <h3 class="answer">zip的處理方式根上面三種稍有不同</h3>
+                    <h3 class="answer">unzip s.txt.zip 解壓縮</h3>
+                    <h3 class="answer">zip s.txt s.txt.zip 壓縮</h3>
+                </section>
+                <section class="linux-question" style="display: block;">
+                    <h3>打包檔案</h3>
+                    <h3 class="answer">tar [tar_name] [files/directory]</h3>
+                    <h3 class="answer">這邊不要背太多,只要記住通常打包和壓縮都是一體的,下面的指令也是包含在一起</h3>
+                    <h3 class="answer">tar -acv -f [filename.tar.gz] file1 file2 file3 打包並壓縮1~3的檔案</h3>
+                    <h3 class="answer">其中-a可以通用所有的壓縮格式, -c為打包壓縮指令 -v顯示資訊</h3>
+                    <h3 class="answer">tar -atv -f [filename.tar.gz] 查看打包檔案</h3>
+                    <h3 class="answer">tar -axv -f [filename.tar.gz] -C [path] 解打包檔案 路徑若不設定則為當前目錄</h3>
+                    <h3 class="answer">unzip s.txt.zip 解壓縮</h3>
+                    <h3 class="answer">zip s.txt s.txt.zip 壓縮</h3>
+                </section>
+            </div>
             
         </div>
     </section>

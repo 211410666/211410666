@@ -292,7 +292,7 @@ index
 
     position: absolute;
     left: 0;
-    top: 80px;
+    top: 60px;
     display: grid;
     grid-template-columns: 40% 60%;
 }
@@ -1272,9 +1272,19 @@ computer
     left: 0;
     top: 40px;
 
+    .answer{
+        font-style: italic;
+    }
+
     &-lr{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        width: 90vw;
+        
+    }
+    .underline{
+        margin-bottom: 2rem;
     }
     header{
         h3{
@@ -1292,7 +1302,10 @@ computer
         letter-spacing: 0.2rem;
     }
     &-container{
-        margin-top: 2rem;
+        border: 2px dashed var(--clr-grey-4);
+        background-color: rgb(232, 226, 219);
+        border-radius: 20px;
+        padding: 1rem;
     }
     &-question{
         display:flex;
@@ -1305,12 +1318,13 @@ computer
         transition: var(--transition);
         h3{
             font-size: 1.2rem;
-            color: var(--clr-grey-5);
+            color: var(--clr-grey-3);
             letter-spacing: 0.2rem;
         }
         .answer{
-            opacity: 0;
+            opacity: 0.2;
             transition: var(--transition);
+            color: var(--clr-grey-6);
         }
         &:hover{
             .answer{
@@ -1319,5 +1333,17 @@ computer
             border-color: rgb(96, 96, 188);
             background-color: rgb(239, 234, 221);
         }
+    }
+}
+
+
+@media screen and (max-width:996px) {
+    .linux-lr{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        width: 80vw;
+        margin: 0 auto;
+        
     }
 }

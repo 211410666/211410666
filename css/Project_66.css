@@ -1226,9 +1226,17 @@ computer
   left: 0;
   top: 40px;
 }
+.linux .answer {
+  font-style: italic;
+}
 .linux-lr {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 90vw;
+}
+.linux .underline {
+  margin-bottom: 2rem;
 }
 .linux header h3 {
   font-size: 1rem;
@@ -1244,7 +1252,10 @@ computer
   letter-spacing: 0.2rem;
 }
 .linux-container {
-  margin-top: 2rem;
+  border: 2px dashed var(--clr-grey-4);
+  background-color: rgb(232, 226, 219);
+  border-radius: 20px;
+  padding: 1rem;
 }
 .linux-question {
   display: flex;
@@ -1258,12 +1269,13 @@ computer
 }
 .linux-question h3 {
   font-size: 1.2rem;
-  color: var(--clr-grey-5);
+  color: var(--clr-grey-3);
   letter-spacing: 0.2rem;
 }
 .linux-question .answer {
-  opacity: 0;
+  opacity: 0.2;
   transition: var(--transition);
+  color: var(--clr-grey-6);
 }
 .linux-question:hover {
   border-color: rgb(96, 96, 188);
@@ -1271,6 +1283,16 @@ computer
 }
 .linux-question:hover .answer {
   opacity: 1;
+}
+
+@media screen and (max-width: 996px) {
+  .linux-lr {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 80vw;
+    margin: 0 auto;
+  }
 }
 
 /*# sourceMappingURL=Project_66.css.map */
