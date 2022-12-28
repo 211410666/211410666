@@ -269,8 +269,12 @@ sidebar
 }
 .sidebar i {
   color: var(--clr-blue-navgb);
-  margin-left: 1rem;
   font-size: 1.2rem;
+}
+.sidebar a:hover {
+  transition-duration: 0.2s;
+  transform-origin: left;
+  color: red;
 }
 .sidebar li {
   width: fit-content;
@@ -279,16 +283,6 @@ sidebar
   display: flex;
   align-items: center;
   vertical-align: middle;
-}
-.sidebar li:hover a {
-  transition-duration: 0.2s;
-  transform-origin: left;
-  color: red;
-}
-.sidebar li:hover i {
-  transition-duration: 0.2s;
-  transform-origin: left;
-  color: red;
 }
 .sidebar li:hover .underline {
   width: 100%;
@@ -308,6 +302,13 @@ sidebar
   font-size: 1.8rem;
   color: white;
   cursor: pointer;
+}
+
+.sibebar-child-container {
+  display: flex;
+  gap: 1rem;
+  font-size: 1rem;
+  margin-left: 1rem;
 }
 
 /*
@@ -343,7 +344,7 @@ index
 .index {
   position: absolute;
   left: 0;
-  top: 80px;
+  top: 60px;
   display: grid;
   grid-template-columns: 40% 60%;
 }
@@ -429,21 +430,6 @@ portfolio
   flex-direction: column;
   height: 80vh;
   width: 100vw;
-}
-@media screen and (max-width: 1300px) {
-  .portfolio_c h2 {
-    font-size: 2rem;
-  }
-  .portfolio_c h4 {
-    font-size: 1rem;
-  }
-  .portfolio_c .c_button {
-    padding: 0.8rem 0.8rem;
-  }
-  .portfolio_c .c_button {
-    width: 100%;
-    height: fit-content;
-  }
 }
 @media screen and (max-width: 1300) {
   .portfolio_c h2 {
@@ -536,8 +522,8 @@ portfolio
   }
   .portfolio_c .c_button {
     padding: 0.5rem;
-    margin: 0;
-    width: 80px;
+    margin: 0 auto;
+    width: 120px;
     height: 40px;
   }
   .portfolio_c .c_button p {
@@ -594,7 +580,7 @@ portfolio
   color: rgb(212, 137, 102);
 }
 .port .commentarys .commentary {
-  width: 60vw;
+  width: 90vw;
   padding: 2rem;
 }
 .port .commentarys .commentary:hover {
@@ -838,12 +824,16 @@ portfolio
 }
 
 .dropleft {
+  opacity: 0.3;
   position: fixed;
   right: 3rem;
   top: 8rem;
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+.dropleft:hover {
+  opacity: 1;
 }
 .dropleft::after {
   position: absolute;
@@ -1234,6 +1224,7 @@ computer
   flex-direction: column;
   gap: 3rem;
   width: 90vw;
+  margin: 0 auto;
 }
 .linux .underline {
   margin-bottom: 2rem;
@@ -1286,13 +1277,23 @@ computer
 }
 
 @media screen and (max-width: 996px) {
+  .linux-question h3 {
+    font-size: 1.2rem;
+  }
   .linux-lr {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    width: 80vw;
-    margin: 0 auto;
+    width: 70vw;
   }
 }
-
-/*# sourceMappingURL=Project_66.css.map */
+@media screen and (max-width: 768px) {
+  .linux-question h3 {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  .linux-question {
+    display: flex;
+    flex-direction: column;
+  }
+  .linux-title {
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=Project_66.css.map */

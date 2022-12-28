@@ -9,7 +9,7 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/Project_66.css">
-    <title>Introduction to Computers</title>
+    <title>Linux</title>
 </head>
 
 <body>
@@ -445,7 +445,7 @@
                     <h3 class="answer">命命列模式:按:進入 輸入w可以寫入 q可以離開 wq!寫入後強制離開</h3>
                 </section>
             </div>
-            <div class="linux-container">
+            <div class="linux-container" id="Redirection">
                 <section class="linux-title">
                     <h3>Bash shell</h3>
                 </section>
@@ -487,6 +487,44 @@
                     <h3 class="answer">最後 &這個符號,可以改變標準輸出和標準錯誤輸出的資料流, 例如echo "123" 這我們知道他一定是正確的 所以螢幕會印出123</h3>
                     <h3 class="answer">所以我們在寫echo "123" 2>1.txt 的時候 1.txt不會有錯誤內容,因為她是對的 那我們改寫成 echo "123" 2>1.txt 1>&2 就是把標準輸出當作錯誤的,這樣前面2>1.txt 裡面就會有123</h3>
                 </section>
+                <section class="linux-question">
+                    <h3>管線</h3>
+                    <h3 class="answer">| 為管線的符號 就是把左邊command的標準輸出 當作右邊command的標準輸入</h3>
+                    <h3 class="answer">如 ls -al | less  把ls -al的輸出 當作less的輸入</h3>
+                </section>
+                <section class="linux-question" style="display: block;">
+                    <h3>tee</h3>
+                    <h3 class="answer">可以把輸出的資料 同時輸出到檔案和螢幕 通常我們會配合管線做使用</h3>
+                    <h3 class="answer">如 ls -al | tee filename  把ls -al的輸出 分配到螢幕與檔案</h3>
+                    <h3 class="answer">我讀到這邊的時候有發現一個觀念問題, 為什麼不可以打 tee filename &lt; ls -l 呢?</h3>
+                    <h3 class="answer">這邊要釐清一個觀念, 就是一般資料重新導向跟command重新導向是完全不一樣的 檔案就是用大小於符號 command就是用管線</h3>
+                    <h3 class="answer">管線你要根據左邊的指令(管線左邊不能是檔案 他是command的重新導向 給右邊的指令或資料)</h3>
+                    <h3 class="answer">但是資料重新導向則是相反,右邊必須要為資料,左邊則必須是command 這邊觀念非常複雜,一定要自己多嘗試才有辦法慢慢搞懂</h3>
+                </section>
+                <section class="linux-question" style="display: block;">
+                    <h3>/dev/null和/dev/tty</h3>
+                    <h3 class="answer">講到資料導向和標準輸出輸入就不得不提到這兩個資料夾</h3>
+                    <h3 class="answer">/dev/null很像windows的資源回收桶,但不完全是,因為丟進去的檔案室再也找不回來的,更類似於黑洞</h3>
+                    <h3 class="answer">而/dev/tty則是存放目前的控制終端</h3>
+                </section>
+            </div>
+            <div class="linux-container" id="Process">
+                <section class="linux-title">
+                    <h3>Process</h3>
+                </section>
+                <section class="linux-question">
+                    <h3>什麼是process?</h3>
+                    <h3 class="answer">任何一個執行中的程式都是process</h3>
+                </section>
+                <section class="linux-question" style="display: block;">
+                    <h3>擷取</h3>
+                    <h3 class="answer">先提一下擷取的概念 grep [string] [filename] 或是 command | grep [string] </h3>
+                    <h3 class="answer">其實他的意思就是從標準輸入中,尋找符合條件的字串如12345 你的條件為23 那他符合條件 他是輸入的一部分,那這段就會被截取出來</h3>
+                </section>
+                <section class="linux-question">
+                    <h3>Process status</h3>
+                    <h3 class="answer">ps [option] 可以顯示目前的process -f -l</h3>
+                </section>
             </div>
             
         </div>
@@ -506,6 +544,20 @@
 
     </section>
     <!-- contact end -->
+
+    <div class="dropleft" id="drop">
+        <a href="#terminal">終端機指令</a>
+        <a href="#environment">教室環境</a>
+        <a href="#internet">網路設定流程</a>
+        <a href="#Preface">Preface</a>
+        <a href="#sys_command">System cmd</a>
+        <a href="#file_command">File cmd</a>
+        <a href="#fhs">FHS</a>
+        <a href="#permissions">Permissions</a>
+        <a href="#editor">Editor</a>
+        <a href="#Redirection">Bash shell</a>
+        <a href="#Process">Process</a>
+    </div>
     <script src="../js/66.js"></script>
     <script src="../js/link.js"></script>
 

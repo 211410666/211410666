@@ -6,7 +6,6 @@
 
 [My Vercel url](https://211410666.vercel.app/)
 
-
 ### Design a nav (include logo,link,icons)
 
 ![](1.png)
@@ -74,3 +73,9 @@
 ![](14-1.png)
 ![](14-2.png)
 ![](14-3.png)
+
+### Design Linux and link all page Fisnish!!!!!!!
+
+![](15-1.png)
+![](15-2.png)
+![](15-3.png)
